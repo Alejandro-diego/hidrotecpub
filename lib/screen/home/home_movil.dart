@@ -1,26 +1,21 @@
 import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:hidrotecpub/const.dart';
-import 'package:hidrotecpub/screen/screen_one.dart';
 import 'package:page_transition/page_transition.dart';
 
-class HomePage extends StatefulWidget {
-  const HomePage({super.key});
+import '../../const.dart';
+import '../screen_one/screen_one.dart';
 
-  @override
-  State<HomePage> createState() => _HomePageState();
-}
+class HomeMovil extends StatelessWidget {
+  const HomeMovil({super.key});
 
-class _HomePageState extends State<HomePage> {
-  String text = 'HIDROTEC';
+  
+
   @override
   Widget build(BuildContext context) {
-    Size size = MediaQuery.of(context).size;
-    return Scaffold(
-      body: Container(
-        decoration: BoxDecoration(color: MisColores.minegro),
-        child: Stack(
+     Size size = MediaQuery.of(context).size;
+     String text = 'HIDROTEC';
+    return Stack(
           children: [
             Positioned(
               bottom: -350,
@@ -142,8 +137,6 @@ class _HomePageState extends State<HomePage> {
               ),
             ),
           ],
-        ),
-      ),
-    );
+        );
   }
 }
