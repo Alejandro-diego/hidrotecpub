@@ -13,7 +13,7 @@ class _TreePageState extends State<TreePage> {
     return Scaffold(
        backgroundColor: const Color.fromARGB(255, 20, 55, 83),
       appBar: AppBar(
-        title: const Text('instrucciones'),
+        title: const Text('Instruções'),
       ),
     );
   }

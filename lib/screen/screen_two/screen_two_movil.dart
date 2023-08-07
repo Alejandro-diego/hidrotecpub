@@ -1,19 +1,19 @@
 import 'package:flutter/material.dart';
 import 'package:page_transition/page_transition.dart';
 
-import '../screen_two/screen_two.dart';
+import '../screen_tree.dart';
 
-class ScreenOneMovil extends StatelessWidget {
-  const ScreenOneMovil({super.key});
+class ScreenTwoMovil extends StatelessWidget {
+  const ScreenTwoMovil({super.key});
 
   @override
   Widget build(BuildContext context) {
-      final size = MediaQuery.of(context).size;
+     final size = MediaQuery.of(context).size;
     return Stack(
       children: [
         Positioned(
           top: size.height * 0.03,
-          height: size.height * 0.5,
+          height: size.height * 0.9,
           width: size.width * 0.88,
           left: size.width * 0.08,
           child: Hero(
@@ -21,7 +21,7 @@ class ScreenOneMovil extends StatelessWidget {
             child: Container(
               decoration: const BoxDecoration(
                 image: DecorationImage(
-                  image: AssetImage('assets/hidro1.png'),
+                  image: AssetImage('assets/event.png'),
                 ),
               ),
             ),
@@ -53,7 +53,7 @@ class ScreenOneMovil extends StatelessWidget {
                 context,
                 PageTransition(
                   type: PageTransitionType.rightToLeft,
-                  child: const ScreenTwo(),
+                  child: const TreePage(),
                 ),
               );
             },
@@ -65,13 +65,13 @@ class ScreenOneMovil extends StatelessWidget {
         ),
         Positioned(
           width: size.width * 0.86,
-          height: size.height * 0.44,
+          height: size.height * 0.32,
           left: size.width * 0.07,
           bottom: size.height * 0.025,
           child: Container(
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(20),
-              color: Colors.black.withOpacity(.5),
+              color: Colors.black.withOpacity(.7),
               border: Border.all(color: Colors.black),
             ),
             child: const Column(
@@ -88,7 +88,7 @@ class ScreenOneMovil extends StatelessWidget {
                         width: 10,
                       ),
                       Text(
-                        'Controle e configuração de \n temperatura remota da piscina.-',
+                        'Possível fazer automação com a bomba de agua.-',
                         style: TextStyle(
                             fontWeight: FontWeight.w900, fontSize: 15),
                       ),
@@ -107,7 +107,7 @@ class ScreenOneMovil extends StatelessWidget {
                         width: 10,
                       ),
                       Text(
-                        'Display da temperatura do tempo \n em tempo real.-',
+                        'Programe timer para ligar e desligar \n automaticamente.-',
                         style: TextStyle(
                             fontWeight: FontWeight.w900, fontSize: 15),
                       ),
@@ -126,7 +126,7 @@ class ScreenOneMovil extends StatelessWidget {
                         width: 10,
                       ),
                       Text(
-                        'Controle automático e manual\n da temperatura da água.-',
+                        'Possível fazer automação com as luces Leds.-',
                         style: TextStyle(
                             fontWeight: FontWeight.w900, fontSize: 15),
                       ),
@@ -145,32 +145,14 @@ class ScreenOneMovil extends StatelessWidget {
                         width: 10,
                       ),
                       Text(
-                        'Controle da bomba a partir do\n aplicativo móvel.-',
+                        'Programe por hora, dia, e semana.-',
                         style: TextStyle(
                             fontWeight: FontWeight.w900, fontSize: 15),
                       ),
                     ],
                   ),
                 ),
-                Padding(
-                  padding: EdgeInsets.all(8.0),
-                  child: Row(
-                    children: [
-                      Icon(
-                        Icons.check_box,
-                        size: 36,
-                      ),
-                      SizedBox(
-                        width: 10,
-                      ),
-                      Text(
-                        'Controle remoto de luzes LED do\n dispositivo móvel.-',
-                        style: TextStyle(
-                            fontWeight: FontWeight.w900, fontSize: 15),
-                      ),
-                    ],
-                  ),
-                ),
+              
               ],
             ),
           ),

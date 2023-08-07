@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:page_transition/page_transition.dart';
 
-import '../screen_two.dart';
+import '../screen_two/screen_two.dart';
 
 class ScreenOneWeb extends StatelessWidget {
   const ScreenOneWeb({super.key});
@@ -30,8 +30,8 @@ class ScreenOneWeb extends StatelessWidget {
         Positioned(
           width: size.width * 0.25,
           height: size.height * 0.07,
-          left: size.width * 0.05,
-          top: size.height * 0.195,
+          left: size.width * 0.35,
+          bottom: size.height * 0.195,
           child: IconButton(
             onPressed: () {
               Navigator.of(context).pop();
@@ -46,14 +46,14 @@ class ScreenOneWeb extends StatelessWidget {
           width: size.width * 0.25,
           height: size.height * 0.07,
           right: size.width * 0.01,
-          top: size.height * 0.195,
+          bottom: size.height * 0.195,
           child: IconButton(
             onPressed: () {
               Navigator.push(
                 context,
                 PageTransition(
                   type: PageTransitionType.rightToLeft,
-                  child: const TempSetPAge(),
+                  child: const ScreenTwo(),
                 ),
               );
             },
@@ -171,7 +171,39 @@ class ScreenOneWeb extends StatelessWidget {
                     ],
                   ),
                 ),
+                Padding(
+                  padding: EdgeInsets.all(8.0),
+                  child: Row(
+                    children: [
+                      Icon(
+                        Icons.check_box,
+                        size: 36,
+                      ),
+                      SizedBox(
+                        width: 10,
+                      ),
+                      Text(
+                        'Proteção contra geada nas placas.-',
+                        style: TextStyle(
+                            fontWeight: FontWeight.w900, fontSize: 18),
+                      ),
+                    ],
+                  ),
+                ),
               ],
+            ),
+          ),
+        ),
+        Positioned(
+          width: size.width * 0.25,
+          height: size.height * 0.17,
+          right: size.width * 0.2,
+          bottom: size.height * 0.295,
+          child: Container(
+            decoration: const BoxDecoration(
+              image: DecorationImage(
+                image: AssetImage('assets/flex.png'),
+              ),
             ),
           ),
         ),

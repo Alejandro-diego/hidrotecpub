@@ -1,37 +1,37 @@
 import 'package:flutter/material.dart';
 import 'package:page_transition/page_transition.dart';
 
-import '../screen_two/screen_two.dart';
+import '../screen_tree.dart';
 
-class ScreenOneMovil extends StatelessWidget {
-  const ScreenOneMovil({super.key});
+class ScreeTwoWeb extends StatelessWidget {
+  const ScreeTwoWeb({super.key});
 
   @override
   Widget build(BuildContext context) {
-      final size = MediaQuery.of(context).size;
+    final size = MediaQuery.of(context).size;
     return Stack(
       children: [
         Positioned(
           top: size.height * 0.03,
-          height: size.height * 0.5,
+          height: size.height * 1.2,
           width: size.width * 0.88,
-          left: size.width * 0.08,
+          left: -250,
           child: Hero(
             tag: 'puto',
             child: Container(
               decoration: const BoxDecoration(
                 image: DecorationImage(
-                  image: AssetImage('assets/hidro1.png'),
+                  image: AssetImage('assets/event.png'),
                 ),
               ),
             ),
           ),
         ),
         Positioned(
-          width: size.width * 0.25,
+           width: size.width * 0.25,
           height: size.height * 0.07,
-          left: size.width * 0.05,
-          top: size.height * 0.195,
+          left: size.width * 0.35,
+          bottom: size.height * 0.195,
           child: IconButton(
             onPressed: () {
               Navigator.of(context).pop();
@@ -46,14 +46,14 @@ class ScreenOneMovil extends StatelessWidget {
           width: size.width * 0.25,
           height: size.height * 0.07,
           right: size.width * 0.01,
-          top: size.height * 0.195,
+          bottom: size.height * 0.195,
           child: IconButton(
             onPressed: () {
               Navigator.push(
                 context,
                 PageTransition(
                   type: PageTransitionType.rightToLeft,
-                  child: const ScreenTwo(),
+                  child: const TreePage(),
                 ),
               );
             },
@@ -64,14 +64,14 @@ class ScreenOneMovil extends StatelessWidget {
           ),
         ),
         Positioned(
-          width: size.width * 0.86,
-          height: size.height * 0.44,
-          left: size.width * 0.07,
-          bottom: size.height * 0.025,
+          width: size.width * 0.56,
+          height: size.height * 0.34,
+          right: size.width * 0.01,
+          top: size.height * 0.09,
           child: Container(
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(20),
-              color: Colors.black.withOpacity(.5),
+              color: Colors.black.withOpacity(.7),
               border: Border.all(color: Colors.black),
             ),
             child: const Column(
@@ -88,9 +88,9 @@ class ScreenOneMovil extends StatelessWidget {
                         width: 10,
                       ),
                       Text(
-                        'Controle e configuração de \n temperatura remota da piscina.-',
+                        'Possível fazer automação com a bomba de agua.-',
                         style: TextStyle(
-                            fontWeight: FontWeight.w900, fontSize: 15),
+                            fontWeight: FontWeight.w900, fontSize: 18),
                       ),
                     ],
                   ),
@@ -107,9 +107,9 @@ class ScreenOneMovil extends StatelessWidget {
                         width: 10,
                       ),
                       Text(
-                        'Display da temperatura do tempo \n em tempo real.-',
+                        'Programe timer para ligar e desligar automaticamente.-',
                         style: TextStyle(
-                            fontWeight: FontWeight.w900, fontSize: 15),
+                            fontWeight: FontWeight.w900, fontSize: 18),
                       ),
                     ],
                   ),
@@ -126,9 +126,9 @@ class ScreenOneMovil extends StatelessWidget {
                         width: 10,
                       ),
                       Text(
-                        'Controle automático e manual\n da temperatura da água.-',
+                        'Possível fazer automação com as luces Leds.-',
                         style: TextStyle(
-                            fontWeight: FontWeight.w900, fontSize: 15),
+                            fontWeight: FontWeight.w900, fontSize: 18),
                       ),
                     ],
                   ),
@@ -145,33 +145,27 @@ class ScreenOneMovil extends StatelessWidget {
                         width: 10,
                       ),
                       Text(
-                        'Controle da bomba a partir do\n aplicativo móvel.-',
+                        'Programe por hora, dia, e semana.-',
                         style: TextStyle(
-                            fontWeight: FontWeight.w900, fontSize: 15),
-                      ),
-                    ],
-                  ),
-                ),
-                Padding(
-                  padding: EdgeInsets.all(8.0),
-                  child: Row(
-                    children: [
-                      Icon(
-                        Icons.check_box,
-                        size: 36,
-                      ),
-                      SizedBox(
-                        width: 10,
-                      ),
-                      Text(
-                        'Controle remoto de luzes LED do\n dispositivo móvel.-',
-                        style: TextStyle(
-                            fontWeight: FontWeight.w900, fontSize: 15),
+                            fontWeight: FontWeight.w900, fontSize: 18),
                       ),
                     ],
                   ),
                 ),
               ],
+            ),
+          ),
+        ),
+        Positioned(
+          width: size.width * 0.25,
+          height: size.height * 0.17,
+          right: size.width * 0.2,
+          bottom: size.height * 0.295,
+          child: Container(
+            decoration: const BoxDecoration(
+              image: DecorationImage(
+                image: AssetImage('assets/flex.png'),
+              ),
             ),
           ),
         ),

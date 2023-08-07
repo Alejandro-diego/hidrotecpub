@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:page_transition/page_transition.dart';
 
-import '../screen_two.dart';
+import '../screen_two/screen_two.dart';
 
 class ScreenOneTablet extends StatelessWidget {
   const ScreenOneTablet({super.key});
@@ -53,7 +53,7 @@ class ScreenOneTablet extends StatelessWidget {
                 context,
                 PageTransition(
                   type: PageTransitionType.rightToLeft,
-                  child: const TempSetPAge(),
+                  child: const ScreenTwo(),
                 ),
               );
             },
