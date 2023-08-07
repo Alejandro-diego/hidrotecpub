@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_intro/flutter_intro.dart';
-import 'package:hidrotecpub/screen/screen_tree/simple_usage.dart';
-import 'demo_usage.dart';
+import 'package:step_progress_indicator/step_progress_indicator.dart';
+
 class TreePage extends StatefulWidget {
   const TreePage({super.key});
 
@@ -20,30 +19,23 @@ class _TreePageState extends State<TreePage> {
 
 
 
-      body:Center(
-        child: Column(
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            ElevatedButton(
-              onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (BuildContext context) => Intro(
-                      padding: EdgeInsets.zero,
-                      borderRadius: const BorderRadius.all(Radius.circular(4)),
-                      maskColor: const Color.fromRGBO(0, 0, 0, .6),
-                      child: const DemoUsage(),
-                    ),
-                  ),
-                );
-              },
-              child: const Text('Demo'),
-            ),
+      body:const Column(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+        
+          Padding(
+            padding: EdgeInsets.all(8.0),
+            child: StepProgressIndicator(
+              totalSteps: 7,
+              currentStep: 1,
+              selectedColor: Colors.black,
+              unselectedColor: Colors.grey,
+          ),
+          ),
          
+       
     
-          ],
-        ),
+        ],
       ), 
     );
   }

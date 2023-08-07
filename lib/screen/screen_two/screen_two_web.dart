@@ -31,7 +31,7 @@ class ScreeTwoWeb extends StatelessWidget {
            width: size.width * 0.25,
           height: size.height * 0.07,
           left: size.width * 0.35,
-          bottom: size.height * 0.195,
+          bottom: size.height * 0.1,
           child: IconButton(
             onPressed: () {
               Navigator.of(context).pop();
@@ -46,7 +46,7 @@ class ScreeTwoWeb extends StatelessWidget {
           width: size.width * 0.25,
           height: size.height * 0.07,
           right: size.width * 0.01,
-          bottom: size.height * 0.195,
+          bottom: size.height * 0.1,
           child: IconButton(
             onPressed: () {
               Navigator.push(
@@ -67,7 +67,7 @@ class ScreeTwoWeb extends StatelessWidget {
           width: size.width * 0.56,
           height: size.height * 0.34,
           right: size.width * 0.01,
-          top: size.height * 0.09,
+          top: size.height * 0.29,
           child: Container(
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(20),
@@ -160,7 +160,7 @@ class ScreeTwoWeb extends StatelessWidget {
           width: size.width * 0.25,
           height: size.height * 0.17,
           right: size.width * 0.2,
-          bottom: size.height * 0.295,
+          top: size.height * 0.05,
           child: Container(
             decoration: const BoxDecoration(
               image: DecorationImage(
