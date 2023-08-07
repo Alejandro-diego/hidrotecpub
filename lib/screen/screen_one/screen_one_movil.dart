@@ -71,7 +71,7 @@ class ScreenOneMovil extends StatelessWidget {
           child: Container(
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(20),
-              color: Colors.black.withOpacity(.5),
+              color: Colors.black.withOpacity(.7),
               border: Border.all(color: Colors.black),
             ),
             child: const Column(

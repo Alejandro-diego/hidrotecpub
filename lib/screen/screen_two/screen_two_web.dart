@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:page_transition/page_transition.dart';
 
-import '../screen_tree/screen_tree.dart';
+import '../instrictions/instruction_page1.dart';
 
 class ScreeTwoWeb extends StatelessWidget {
   const ScreeTwoWeb({super.key});
@@ -53,7 +53,7 @@ class ScreeTwoWeb extends StatelessWidget {
                 context,
                 PageTransition(
                   type: PageTransitionType.rightToLeft,
-                  child: const TreePage(),
+                  child: const InstructionPage1(),
                 ),
               );
             },
