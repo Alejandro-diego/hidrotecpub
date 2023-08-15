@@ -8,7 +8,7 @@ class ScreenTwoMovil extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-     final size = MediaQuery.of(context).size;
+    final size = MediaQuery.of(context).size;
     return Stack(
       children: [
         Positioned(
@@ -74,85 +74,88 @@ class ScreenTwoMovil extends StatelessWidget {
               color: Colors.black.withOpacity(.7),
               border: Border.all(color: Colors.black),
             ),
-            child: const Column(
+            child: Column(
               children: [
                 Padding(
-                  padding: EdgeInsets.all(8.0),
+                  padding: const EdgeInsets.all(8.0),
                   child: Row(
                     children: [
                       Icon(
                         Icons.check_box,
-                        size: 36,
+                        size: size.height * 0.046,
                       ),
-                      SizedBox(
+                      const SizedBox(
                         width: 10,
                       ),
                       Text(
                         'Possível fazer automação com a bomba de agua.-',
                         style: TextStyle(
-                            fontWeight: FontWeight.w900, fontSize: 15),
+                            fontWeight: FontWeight.w900,
+                            fontSize: size.height * 0.02),
                       ),
                     ],
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsets.all(8.0),
+                  padding: const EdgeInsets.all(8.0),
                   child: Row(
                     children: [
                       Icon(
                         Icons.check_box,
-                        size: 36,
+                        size: size.height * 0.046,
                       ),
-                      SizedBox(
+                      const SizedBox(
                         width: 10,
                       ),
                       Text(
                         'Programe timer para ligar e desligar \n automaticamente.-',
                         style: TextStyle(
-                            fontWeight: FontWeight.w900, fontSize: 15),
+                            fontWeight: FontWeight.w900,
+                            fontSize: size.height * 0.02),
                       ),
                     ],
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsets.all(8.0),
+                  padding: const EdgeInsets.all(8.0),
                   child: Row(
                     children: [
                       Icon(
                         Icons.check_box,
-                        size: 36,
+                        size: size.height * 0.046,
                       ),
-                      SizedBox(
+                      const SizedBox(
                         width: 10,
                       ),
                       Text(
                         'Possível fazer automação com as luces Leds.-',
                         style: TextStyle(
-                            fontWeight: FontWeight.w900, fontSize: 15),
+                            fontWeight: FontWeight.w900,
+                            fontSize: size.height * 0.02),
                       ),
                     ],
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsets.all(8.0),
+                  padding: const EdgeInsets.all(8.0),
                   child: Row(
                     children: [
                       Icon(
                         Icons.check_box,
-                        size: 36,
+                        size: size.height * 0.046,
                       ),
-                      SizedBox(
+                      const SizedBox(
                         width: 10,
                       ),
                       Text(
                         'Programe por hora, dia, e semana.-',
                         style: TextStyle(
-                            fontWeight: FontWeight.w900, fontSize: 15),
+                            fontWeight: FontWeight.w900,
+                            fontSize: size.height * 0.02),
                       ),
                     ],
                   ),
                 ),
-              
               ],
             ),
           ),
