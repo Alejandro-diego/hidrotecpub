@@ -68,7 +68,7 @@ class ScreenOneMovil extends StatelessWidget {
         ),
         Positioned(
           width: size.width * 0.86,
-          height: size.height * 0.44,
+          height: size.height * 0.47,
           left: size.width * 0.07,
           bottom: size.height * 0.025,
           child: Container(
@@ -77,104 +77,106 @@ class ScreenOneMovil extends StatelessWidget {
               color: Colors.black.withOpacity(.7),
               border: Border.all(color: Colors.black),
             ),
-            child:  Column(
-              children: [
-                Padding(
-                  padding: const EdgeInsets.all(8.0),
-                  child: Row(
-                    children: [
-                      Icon(
-                        Icons.check_box,
-                        size: size.height * 0.046,
-                      ),
-                   const    SizedBox(
-                        width: 10,
-                      ),
-                      Text(
-                        'Controle e configuração de \n temperatura remota da piscina.-',
-                        style: TextStyle(
-                            fontWeight: FontWeight.w900, fontSize: size.height * 0.02 ),
-                      ),
-                    ],
+            child:  SingleChildScrollView(
+              child: Column(
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Row(
+                      children: [
+                        Icon(
+                          Icons.check_box,
+                          size: size.height * 0.046,
+                        ),
+                     const    SizedBox(
+                          width: 10,
+                        ),
+                        Text(
+                          'Controle e configuração de \n temperatura remota da piscina.-',
+                          style: TextStyle(
+                              fontWeight: FontWeight.w900, fontSize: size.height * 0.025 ),
+                        ),
+                      ],
+                    ),
                   ),
-                ),
-                Padding(
-                  padding: const  EdgeInsets.all(8.0),
-                  child: Row(
-                    children: [
-                      Icon(
-                        Icons.check_box,
-                        size:  size.height * 0.046,
-                      ),
-                   const    SizedBox(
-                        width: 10,
-                      ),
-                      Text(
-                        'Display da temperatura do tempo \n em tempo real.-',
-                        style: TextStyle(
-                            fontWeight: FontWeight.w900, fontSize: size.height * 0.02),
-                      ),
-                    ],
+                  Padding(
+                    padding: const  EdgeInsets.all(8.0),
+                    child: Row(
+                      children: [
+                        Icon(
+                          Icons.check_box,
+                          size:  size.height * 0.046,
+                        ),
+                     const    SizedBox(
+                          width: 10,
+                        ),
+                        Text(
+                          'Display da temperatura do tempo \n em tempo real.-',
+                          style: TextStyle(
+                              fontWeight: FontWeight.w900, fontSize: size.height * 0.025),
+                        ),
+                      ],
+                    ),
                   ),
-                ),
-                Padding(
-                  padding:  const EdgeInsets.all(8.0),
-                  child: Row(
-                    children: [
-                      Icon(
-                        Icons.check_box,
-                        size: size.height * 0.046,
-                      ),
-                   const    SizedBox(
-                        width: 10,
-                      ),
-                      Text(
-                        'Controle automático e manual\n da temperatura da água.-',
-                        style: TextStyle(
-                            fontWeight: FontWeight.w900, fontSize: size.height * 0.02),
-                      ),
-                    ],
+                  Padding(
+                    padding:  const EdgeInsets.all(8.0),
+                    child: Row(
+                      children: [
+                        Icon(
+                          Icons.check_box,
+                          size: size.height * 0.046,
+                        ),
+                     const    SizedBox(
+                          width: 10,
+                        ),
+                        Text(
+                          'Controle automático e manual\n da temperatura da água.-',
+                          style: TextStyle(
+                              fontWeight: FontWeight.w900, fontSize: size.height * 0.025),
+                        ),
+                      ],
+                    ),
                   ),
-                ),
-                Padding(
-                  padding: const  EdgeInsets.all(8.0),
-                  child: Row(
-                    children: [
-                      Icon(
-                        Icons.check_box,
-                        size: size.height * 0.046,
-                      ),
-                   const    SizedBox(
-                        width: 10,
-                      ),
-                      Text(
-                        'Controle da bomba a partir do\n aplicativo móvel.-',
-                        style: TextStyle(
-                            fontWeight: FontWeight.w900, fontSize: size.height * 0.02),
-                      ),
-                    ],
+                  Padding(
+                    padding: const  EdgeInsets.all(8.0),
+                    child: Row(
+                      children: [
+                        Icon(
+                          Icons.check_box,
+                          size: size.height * 0.046,
+                        ),
+                     const    SizedBox(
+                          width: 10,
+                        ),
+                        Text(
+                          'Controle da bomba a partir do\n aplicativo móvel.-',
+                          style: TextStyle(
+                              fontWeight: FontWeight.w900, fontSize: size.height * 0.025),
+                        ),
+                      ],
+                    ),
                   ),
-                ),
-                Padding(
-                  padding: const EdgeInsets.all(8.0),
-                  child: Row(
-                    children: [
-                      Icon(
-                        Icons.check_box,
-                        size: size.height * 0.046,
-                      ),
-                    const   SizedBox(
-                        width: 10,
-                      ),
-                      Text(
-                        'Controle remoto de luzes LED do\n dispositivo móvel.-',
-                        style: TextStyle(
-                            fontWeight: FontWeight.w900, fontSize: size.height * 0.02),
-                      ),
-                    ],
+                  Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Row(
+                      children: [
+                        Icon(
+                          Icons.check_box,
+                          size: size.height * 0.046,
+                        ),
+                      const   SizedBox(
+                          width: 10,
+                        ),
+                        Text(
+                          'Controle remoto de luzes LED do\n dispositivo móvel.-',
+                          style: TextStyle(
+                              fontWeight: FontWeight.w900, fontSize: size.height * 0.025),
+                        ),
+                      ],
+                    ),
                   ),
-                ),
-              ],
+                ],
+              ),
             ),
           ),
         ),

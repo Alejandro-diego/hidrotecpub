@@ -67,7 +67,7 @@ class ScreenTwoMovil extends StatelessWidget {
         ),
         Positioned(
           width: size.width * 0.86,
-          height: size.height * 0.32,
+          height: size.height * 0.42,
           left: size.width * 0.07,
           bottom: size.height * 0.025,
           child: Container(
@@ -94,7 +94,7 @@ class ScreenTwoMovil extends StatelessWidget {
                           'Possível fazer automação com a \n bomba de agua.-',
                           style: TextStyle(
                               fontWeight: FontWeight.w900,
-                              fontSize: size.height * 0.02),
+                              fontSize: size.height * 0.025),
                         ),
                       ],
                     ),
@@ -114,7 +114,7 @@ class ScreenTwoMovil extends StatelessWidget {
                           'Programe timer para ligar e desligar \n automaticamente.-',
                           style: TextStyle(
                               fontWeight: FontWeight.w900,
-                              fontSize: size.height * 0.02),
+                              fontSize: size.height * 0.025),
                         ),
                       ],
                     ),
@@ -134,7 +134,7 @@ class ScreenTwoMovil extends StatelessWidget {
                           'Possível fazer automação com as \nluces Leds.-',
                           style: TextStyle(
                               fontWeight: FontWeight.w900,
-                              fontSize: size.height * 0.02),
+                              fontSize: size.height * 0.025),
                         ),
                       ],
                     ),
@@ -154,7 +154,7 @@ class ScreenTwoMovil extends StatelessWidget {
                           'Programe por hora, dia, e semana.-',
                           style: TextStyle(
                               fontWeight: FontWeight.w900,
-                              fontSize: size.height * 0.02),
+                              fontSize: size.height * 0.025),
                         ),
                       ],
                     ),

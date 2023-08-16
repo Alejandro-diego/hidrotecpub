@@ -128,7 +128,7 @@ class HomeMovil extends StatelessWidget {
                       );
                     },
                     child: const Text(
-                      'COMENCAR',
+                      'Começar',
                       style:
                           TextStyle(fontWeight: FontWeight.w900, fontSize: 20),
                     ),
