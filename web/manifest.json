@@ -1,11 +1,11 @@
 {
-    "name": "hidrotecpub",
+    "name": "HidrotecDemo",
     "short_name": "hidrotecpub",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
     "theme_color": "#0175C2",
-    "description": "A new Flutter project.",
+    "description": "HidrotecDemo",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [
