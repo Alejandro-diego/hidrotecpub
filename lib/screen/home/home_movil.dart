@@ -4,6 +4,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:page_transition/page_transition.dart';
 
 import '../../const.dart';
+import '../instruciones_app/instrucciones_app_page1.dart';
 import '../screen_one/screen_one.dart';
 
 class HomeMovil extends StatelessWidget {
@@ -89,23 +90,25 @@ class HomeMovil extends StatelessWidget {
             ),
           ),
         ),
-        Align(
+         Align(
           alignment: Alignment.bottomCenter,
           child: Padding(
-            padding: const EdgeInsets.only(bottom: 100),
-            child: AnimatedTextKit(
-              pause: const Duration(milliseconds: 100),
-              totalRepeatCount: 1,
-              animatedTexts: [
-                ColorizeAnimatedText('Tenha o control de sua piscina',
-                    textStyle: const TextStyle(fontSize: 25,
-                      fontWeight: FontWeight.w900),
-                    colors: MisColores.colorizeColors),
-                ColorizeAnimatedText('Na sua mão',
-                    textStyle: const TextStyle(fontSize: 25,
-                      fontWeight: FontWeight.w900),
-                    colors: MisColores.colorizeColors),
-              ],
+            padding:const  EdgeInsets.only(bottom: 100),
+            child: DefaultTextStyle(
+              style: const TextStyle(fontSize: 25,
+              color: Colors.white,
+                        fontWeight: FontWeight.w900),
+              child: AnimatedTextKit(
+               
+                animatedTexts: [
+                  FadeAnimatedText('Tenha o control de sua piscina',
+                      
+                      ),
+                  FadeAnimatedText('Na sua mão',
+                    
+                    ),
+                ],
+              ),
             ),
           ),
         ),
@@ -122,7 +125,8 @@ class HomeMovil extends StatelessWidget {
                     context,
                     PageTransition(
                       type: PageTransitionType.fade,
-                      child: const PageOne(),
+                      child: const InstAppPage1(),
+                   //   child: const PageOne(),
                     ),
                   );
                 },
