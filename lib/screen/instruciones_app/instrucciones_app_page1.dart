@@ -102,7 +102,7 @@ class _InstAppPage1State extends State<InstAppPage1> {
                               Icons.access_time,
                               color: Colors.red,
                             ),
-                            Text('    Indica evento Activado'),
+                            Text('    Indica evento Ativado'),
                           ],
                         ),
                       ),
@@ -124,16 +124,20 @@ class _InstAppPage1State extends State<InstAppPage1> {
               ),
             ],
           ),
-
-         const  SizedBox(height: 50,),
+          const SizedBox(
+            height: 50,
+          ),
           SizedBox(
             width: 200,
-
             height: 50,
             child: ElevatedButton(
-              
               style: ElevatedButton.styleFrom(),
-              onPressed: () {}, child: const Text('Proximo',style: TextStyle(fontWeight: FontWeight.w900),)),
+              onPressed: () {},
+              child: const Text(
+                'Proximo',
+                style: TextStyle(fontWeight: FontWeight.w900),
+              ),
+            ),
           )
         ],
       ),
