@@ -3,7 +3,8 @@ import 'package:hidrotecpub/responsive.dart';
 import 'package:page_transition/page_transition.dart';
 import '../../widget/desktop_page.dart';
 import '../../widget/movil_page.dart';
-import 'instruction_page1.dart';
+import '../instruciones_app/instrucciones_app_page1.dart';
+
 
 class InstructionPage7 extends StatefulWidget {
   const InstructionPage7({super.key});
@@ -34,7 +35,7 @@ class _InstructionPage7State extends State<InstructionPage7> {
                   context,
                   PageTransition(
                     type: PageTransitionType.fade,
-                    child: const InstructionPage1(),
+                    child: const InstAppPage1(),
                   ),
                 );
               },
@@ -49,7 +50,7 @@ class _InstructionPage7State extends State<InstructionPage7> {
                   context,
                   PageTransition(
                     type: PageTransitionType.fade,
-                    child: const InstructionPage1(),
+                    child: const InstAppPage1(),
                   ),
                 );
               },

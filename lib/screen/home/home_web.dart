@@ -96,19 +96,16 @@ class HomeWebPage extends StatelessWidget {
           alignment: Alignment.bottomCenter,
           child: Padding(
             padding: const EdgeInsets.only(bottom: 100),
-            child: DefaultTextStyle(
-              style: const TextStyle(
-                  fontSize: 25,
-                  fontWeight: FontWeight.w900,
-                  color: Colors.blueAccent),
-              child: AnimatedTextKit(
-                pause: const Duration(milliseconds: 100),
-                totalRepeatCount: 1,
-                animatedTexts: [
-                  WavyAnimatedText(
-                      'Tenha o control de sua piscina .. Na sua mao '),
-                ],
-              ),
+            child: AnimatedTextKit(
+              pause: const Duration(milliseconds: 200),
+              totalRepeatCount: 1,
+              animatedTexts: [
+             ColorizeAnimatedText('Tenha o controle da sua piscina na sua mão',
+                    textStyle: const TextStyle(
+                      fontSize: 35,
+                      fontWeight: FontWeight.w900),
+                    colors: MisColores.colorizeColors),
+              ],
             ),
           ),
         ),

@@ -2,8 +2,6 @@ import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:flutter/material.dart';
 import 'package:step_progress_indicator/step_progress_indicator.dart';
 
-
-
 class MovilPage extends StatefulWidget {
   const MovilPage(
       {super.key,
@@ -32,8 +30,8 @@ class _MovilPageState extends State<MovilPage> {
           child: StepProgressIndicator(
             totalSteps: 7,
             currentStep: widget.step,
-            selectedColor: Colors.black,
-            unselectedColor: Colors.grey,
+            selectedColor: Colors.blueAccent,
+            unselectedColor: Colors.black,
           ),
         ),
         Padding(
@@ -70,19 +68,16 @@ class _MovilPageState extends State<MovilPage> {
               child: Center(
                 child: Padding(
                   padding: const EdgeInsets.all(8.0),
-                  child: DefaultTextStyle(style: const TextStyle(fontWeight: FontWeight.w900,fontSize: 20.0,color: Colors.white),
-                  child: AnimatedTextKit(
-                    totalRepeatCount: 1,
-                    
-                    animatedTexts: [
-                    TyperAnimatedText(widget.textIntruction)
-                  ],),)
-                  
-                  
-                  
-                  
-                  
-                
+                  child: DefaultTextStyle(
+                    style: const TextStyle(
+                        fontWeight: FontWeight.w900,
+                        fontSize: 20.0,
+                        color: Colors.white),
+                    child: AnimatedTextKit(
+                      totalRepeatCount: 1,
+                      animatedTexts: [TyperAnimatedText(widget.textIntruction)],
+                    ),
+                  ),
                 ),
               ),
             ),
