@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:hidrotecpub/responsive.dart';
 import 'package:page_transition/page_transition.dart';
 
+import '../../widget/desktop_page.dart';
 import '../../widget/movil_page.dart';
 import 'instruction_page3.dart';
 
@@ -13,6 +14,8 @@ class InstructionPage2 extends StatefulWidget {
 }
 
 class _InstructionPage2State extends State<InstructionPage2> {
+  String instruccion =
+      'Prencher os datos, Nome, E-mail valido, senha(6 digitos), numero de Dipositivo, CEP do local.-  ';
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -27,7 +30,21 @@ class _InstructionPage2State extends State<InstructionPage2> {
             mobile: MovilPage(
               step: 2,
               assetImage: 'assets/inst2.png',
-              textIntruction: 'Prencher os datos, Nome, E-mail valido, senha(6 digitos), numero de Dipositivo, CEP do local.-  ',
+              textIntruction: instruccion,
+              onPress: () {
+                Navigator.push(
+                  context,
+                  PageTransition(
+                    type: PageTransitionType.fade,
+                    child: const InstructionPage3(),
+                  ),
+                );
+              },
+            ),
+            desktop: DesktopPage(
+              step: 2,
+              assetImage: 'assets/inst2.png',
+              textIntruction: instruccion,
               onPress: () {
                 Navigator.push(
                   context,

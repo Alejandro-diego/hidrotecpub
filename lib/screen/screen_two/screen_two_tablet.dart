@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:page_transition/page_transition.dart';
 
-import '../instrictions/instruction_page1.dart';
+import '../instructions/instruction_page1.dart';
 
 class ScreenTwoTablet extends StatelessWidget {
   const ScreenTwoTablet({super.key});
