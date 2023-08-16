@@ -5,9 +5,14 @@ import 'package:page_transition/page_transition.dart';
 import '../../widget/movil_page.dart';
 import 'instruction_page3.dart';
 
-class InstructionPage2 extends StatelessWidget {
+class InstructionPage2 extends StatefulWidget {
   const InstructionPage2({super.key});
 
+  @override
+  State<InstructionPage2> createState() => _InstructionPage2State();
+}
+
+class _InstructionPage2State extends State<InstructionPage2> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(

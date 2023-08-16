@@ -1,12 +1,21 @@
 import 'package:flutter/material.dart';
 import 'package:hidrotecpub/responsive.dart';
+import 'package:hidrotecpub/widget/desktop_page.dart';
 import 'package:page_transition/page_transition.dart';
 
 import '../../widget/movil_page.dart';
 import 'instruction_page2.dart';
 
-class InstructionPage1 extends StatelessWidget {
+class InstructionPage1 extends StatefulWidget {
   const InstructionPage1({super.key});
+
+  @override
+  State<InstructionPage1> createState() => _InstructionPage1State();
+}
+
+class _InstructionPage1State extends State<InstructionPage1> {
+  String instruccion =
+      'A primeira coisa que vamos fazer é criar uma conta para poder operar nosso aplicativo, ou inserir nosso e-mail sim ja temos conta de antes.-';
 
   @override
   Widget build(BuildContext context) {
@@ -22,8 +31,22 @@ class InstructionPage1 extends StatelessWidget {
             mobile: MovilPage(
               step: 1,
               assetImage: 'assets/inst1.png',
-              textIntruction:
-                  'A primeira coisa que vamos fazer é criar uma conta para poder operar nosso aplicativo, ou inserir nosso e-mail sim ja temos conta de entes.-"',
+              textIntruction: instruccion,
+              onPress: () {
+                Navigator.push(
+                  context,
+                  PageTransition(
+                    type: PageTransitionType.fade,
+                    child: const InstructionPage2(),
+                  ),
+                );
+              },
+            ),
+         
+            desktop: DesktopPage(
+              step: 1,
+              assetImage: 'assets/inst1.png',
+              textIntruction: instruccion,
               onPress: () {
                 Navigator.push(
                   context,
