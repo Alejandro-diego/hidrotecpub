@@ -20,8 +20,8 @@ class InstructionPage7 extends StatelessWidget {
           Responsive(
             mobile: MovilPage(
               step: 7,
-              assetImage: 'assets/log1.png',
-              textIntruction: 'Sexta instruccion',
+              assetImage: 'assets/inst7.png',
+              textIntruction: 'Seu App esta pronta para usar',
               onPress: () {
                 Navigator.push(
                   context,

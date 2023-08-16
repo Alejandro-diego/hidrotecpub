@@ -21,9 +21,9 @@ class InstructionPage1 extends StatelessWidget {
           Responsive(
             mobile: MovilPage(
               step: 1,
-              assetImage: 'assets/log1.png',
+              assetImage: 'assets/inst1.png',
               textIntruction:
-                  'A primeira coisa que vamos fazer é criar uma conta para poder operar nosso aplicativo, vamos inserir um e-mail válido e uma senha (seis dígitos).Então pressionamos onde diz "Precisa de uma Conta?"',
+                  'A primeira coisa que vamos fazer é criar uma conta para poder operar nosso aplicativo, ou inserir nosso e-mail sim ja temos conta de entes.-"',
               onPress: () {
                 Navigator.push(
                   context,

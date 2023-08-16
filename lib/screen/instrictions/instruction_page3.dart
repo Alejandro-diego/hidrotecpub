@@ -22,8 +22,8 @@ class InstructionPage3 extends StatelessWidget {
           Responsive(
             mobile: MovilPage(
               step: 3,
-              assetImage: 'assets/log1.png',
-              textIntruction: 'Tercera instruccion',
+              assetImage: 'assets/inst3.png',
+              textIntruction: 'Uma vez feito o login vamos pra "Menu" na parte superior direito',
               onPress: () {
                 Navigator.push(
                   context,

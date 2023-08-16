@@ -22,8 +22,8 @@ class InstructionPage4 extends StatelessWidget {
           Responsive(
               mobile: MovilPage(
             step: 4,
-            assetImage: 'assets/log1.png',
-            textIntruction: 'Quarta instruccion',
+            assetImage: 'assets/inst4.png',
+            textIntruction: 'Comprobar sim nosso BLUETOOTH de nosso telefone esta ligado, e escoller ParearDisp.-',
             onPress: () {
               Navigator.push(
                 context,

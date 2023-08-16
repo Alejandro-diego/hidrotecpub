@@ -21,8 +21,8 @@ class InstructionPage6 extends StatelessWidget {
           Responsive(
               mobile: MovilPage(
             step: 6,
-            assetImage: 'assets/log1.png',
-            textIntruction: 'Septima instruccion',
+            assetImage: 'assets/inst6.png',
+            textIntruction: 'Comprobar sim nosso Router de Wi-Fi esta ligado, e escoller nossa rede e senha.-',
             onPress: () {
               Navigator.push(
                 context,

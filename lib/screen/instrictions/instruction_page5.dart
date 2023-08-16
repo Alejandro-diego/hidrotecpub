@@ -21,8 +21,8 @@ class InstructionPage5 extends StatelessWidget {
           Responsive(
               mobile: MovilPage(
             step: 5,
-            assetImage: 'assets/log1.png',
-            textIntruction: 'Quinta instruccion',
+            assetImage: 'assets/inst5.png',
+            textIntruction: 'Comprobar sim nosso Dispositvo Hidrotec esta ligado em nossa piscina, e escoller Hidrotec_BLE_Disp.-',
             onPress: () {
               Navigator.push(
                 context,

@@ -21,8 +21,8 @@ class InstructionPage2 extends StatelessWidget {
           Responsive(
             mobile: MovilPage(
               step: 2,
-              assetImage: 'assets/cadastro.png',
-              textIntruction: 'Segunda instruccion',
+              assetImage: 'assets/inst2.png',
+              textIntruction: 'Prencher os datos, Nome, E-mail valido, senha(6 digitos), numero de Dipositivo, CEP do local.-  ',
               onPress: () {
                 Navigator.push(
                   context,
