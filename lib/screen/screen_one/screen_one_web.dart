@@ -76,123 +76,125 @@ class ScreenOneWeb extends StatelessWidget {
               color: Colors.black.withOpacity(.7),
               border: Border.all(color: Colors.black),
             ),
-            child: const Column(
-              children: [
-                Padding(
-                  padding: EdgeInsets.all(8.0),
-                  child: Row(
-                    children: [
-                      Icon(
-                        Icons.check_box,
-                        size: 36,
-                      ),
-                      SizedBox(
-                        width: 10,
-                      ),
-                      Text(
-                        'Controle e configuração de temperatura remota da piscina.-',
-                        style: TextStyle(
-                            fontWeight: FontWeight.w900, fontSize: 18),
-                      ),
-                    ],
+            child: const SingleChildScrollView(
+              child: Column(
+                children: [
+                  Padding(
+                    padding: EdgeInsets.all(8.0),
+                    child: Row(
+                      children: [
+                        Icon(
+                          Icons.check_box,
+                          size: 36,
+                        ),
+                        SizedBox(
+                          width: 10,
+                        ),
+                        Text(
+                          'Controle e configuração de temperatura remota da piscina.-',
+                          style: TextStyle(
+                              fontWeight: FontWeight.w900, fontSize: 18),
+                        ),
+                      ],
+                    ),
                   ),
-                ),
-                Padding(
-                  padding: EdgeInsets.all(8.0),
-                  child: Row(
-                    children: [
-                      Icon(
-                        Icons.check_box,
-                        size: 36,
-                      ),
-                      SizedBox(
-                        width: 10,
-                      ),
-                      Text(
-                        'Display da temperatura do tempo em tempo real.-',
-                        style: TextStyle(
-                            fontWeight: FontWeight.w900, fontSize: 18),
-                      ),
-                    ],
+                  Padding(
+                    padding: EdgeInsets.all(8.0),
+                    child: Row(
+                      children: [
+                        Icon(
+                          Icons.check_box,
+                          size: 36,
+                        ),
+                        SizedBox(
+                          width: 10,
+                        ),
+                        Text(
+                          'Display da temperatura do tempo em tempo real.-',
+                          style: TextStyle(
+                              fontWeight: FontWeight.w900, fontSize: 18),
+                        ),
+                      ],
+                    ),
                   ),
-                ),
-                Padding(
-                  padding: EdgeInsets.all(8.0),
-                  child: Row(
-                    children: [
-                      Icon(
-                        Icons.check_box,
-                        size: 36,
-                      ),
-                      SizedBox(
-                        width: 10,
-                      ),
-                      Text(
-                        'Controle automático e manual da temperatura da água.-',
-                        style: TextStyle(
-                            fontWeight: FontWeight.w900, fontSize: 18),
-                      ),
-                    ],
+                  Padding(
+                    padding: EdgeInsets.all(8.0),
+                    child: Row(
+                      children: [
+                        Icon(
+                          Icons.check_box,
+                          size: 36,
+                        ),
+                        SizedBox(
+                          width: 10,
+                        ),
+                        Text(
+                          'Controle automático e manual da temperatura da água.-',
+                          style: TextStyle(
+                              fontWeight: FontWeight.w900, fontSize: 18),
+                        ),
+                      ],
+                    ),
                   ),
-                ),
-                Padding(
-                  padding: EdgeInsets.all(8.0),
-                  child: Row(
-                    children: [
-                      Icon(
-                        Icons.check_box,
-                        size: 36,
-                      ),
-                      SizedBox(
-                        width: 10,
-                      ),
-                      Text(
-                        'Controle da bomba a partir do  aplicativo móvel.-',
-                        style: TextStyle(
-                            fontWeight: FontWeight.w900, fontSize: 18),
-                      ),
-                    ],
+                  Padding(
+                    padding: EdgeInsets.all(8.0),
+                    child: Row(
+                      children: [
+                        Icon(
+                          Icons.check_box,
+                          size: 36,
+                        ),
+                        SizedBox(
+                          width: 10,
+                        ),
+                        Text(
+                          'Controle da bomba a partir do  aplicativo móvel.-',
+                          style: TextStyle(
+                              fontWeight: FontWeight.w900, fontSize: 18),
+                        ),
+                      ],
+                    ),
                   ),
-                ),
-                Padding(
-                  padding: EdgeInsets.all(8.0),
-                  child: Row(
-                    children: [
-                      Icon(
-                        Icons.check_box,
-                        size: 36,
-                      ),
-                      SizedBox(
-                        width: 10,
-                      ),
-                      Text(
-                        'Controle remoto de luzes LED do dispositivo móvel.-',
-                        style: TextStyle(
-                            fontWeight: FontWeight.w900, fontSize: 18),
-                      ),
-                    ],
+                  Padding(
+                    padding: EdgeInsets.all(8.0),
+                    child: Row(
+                      children: [
+                        Icon(
+                          Icons.check_box,
+                          size: 36,
+                        ),
+                        SizedBox(
+                          width: 10,
+                        ),
+                        Text(
+                          'Controle remoto de luzes LED do dispositivo móvel.-',
+                          style: TextStyle(
+                              fontWeight: FontWeight.w900, fontSize: 18),
+                        ),
+                      ],
+                    ),
                   ),
-                ),
-                Padding(
-                  padding: EdgeInsets.all(8.0),
-                  child: Row(
-                    children: [
-                      Icon(
-                        Icons.check_box,
-                        size: 36,
-                      ),
-                      SizedBox(
-                        width: 10,
-                      ),
-                      Text(
-                        'Proteção contra geada nas placas.-',
-                        style: TextStyle(
-                            fontWeight: FontWeight.w900, fontSize: 18),
-                      ),
-                    ],
+                  Padding(
+                    padding: EdgeInsets.all(8.0),
+                    child: Row(
+                      children: [
+                        Icon(
+                          Icons.check_box,
+                          size: 36,
+                        ),
+                        SizedBox(
+                          width: 10,
+                        ),
+                        Text(
+                          'Proteção contra geada nas placas.-',
+                          style: TextStyle(
+                              fontWeight: FontWeight.w900, fontSize: 18),
+                        ),
+                      ],
+                    ),
                   ),
-                ),
-              ],
+                ],
+              ),
             ),
           ),
         ),
