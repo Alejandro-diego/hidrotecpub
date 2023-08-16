@@ -29,7 +29,7 @@ class _InstAppPage1State extends State<InstAppPage1> {
             children: [
               Container(
                 height: 400,
-                width: 200,
+                width: 180,
                 decoration: const BoxDecoration(
                   image: DecorationImage(
                     image: AssetImage('assets/info.png'),
@@ -37,7 +37,7 @@ class _InstAppPage1State extends State<InstAppPage1> {
                 ),
               ),
               Container(
-                height: size.height * 0.5,
+                height: size.height * 0.7,
                 width: size.width * 0.5,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(20),
@@ -78,33 +78,63 @@ class _InstAppPage1State extends State<InstAppPage1> {
                         style: TextStyle(
                             fontWeight: FontWeight.w700, color: Colors.orange),
                       ),
-
-
-                        const Text(
+                      const Text(
                           'Liga e deliga em forma manual \n a bomba de agua.'),
-
-
-                             const Text(
+                      const Text(
                         'Auto',
                         style: TextStyle(
                             fontWeight: FontWeight.w700, color: Colors.orange),
                       ),
-
-
-                        const Text(
-                          'Liga e deliga em forma automatica \n quando atingir a temperatura \nseleccionada pelo SET.'),
-
-
-
-
-
-
+                      const Text(
+                          'Liga e desliga em forma automatica \n quando atingir a temperatura \nseleccionada pelo SET.'),
+                      const Text(
+                        'Disp:',
+                        style: TextStyle(
+                            fontWeight: FontWeight.w700, color: Colors.orange),
+                      ),
+                      const Text(
+                          'Indica o numero de seu \n dispositivo HIDROTEC.'),
+                      const Padding(
+                        padding: EdgeInsets.all(8.0),
+                        child: Row(
+                          children: [
+                            Icon(
+                              Icons.access_time,
+                              color: Colors.red,
+                            ),
+                            Text('    Indica evento Activado'),
+                          ],
+                        ),
+                      ),
+                      const Padding(
+                        padding: EdgeInsets.all(8.0),
+                        child: Row(
+                          children: [
+                            Icon(
+                              Icons.access_time,
+                              color: Colors.grey,
+                            ),
+                            Text('    Indica evento Desativado'),
+                          ],
+                        ),
+                      )
                     ],
                   ),
                 ),
               ),
             ],
           ),
+
+         const  SizedBox(height: 50,),
+          SizedBox(
+            width: 200,
+
+            height: 50,
+            child: ElevatedButton(
+              
+              style: ElevatedButton.styleFrom(),
+              onPressed: () {}, child: const Text('Proximo',style: TextStyle(fontWeight: FontWeight.w900),)),
+          )
         ],
       ),
     );
