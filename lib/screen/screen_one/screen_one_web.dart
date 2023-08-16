@@ -33,6 +33,7 @@ class ScreenOneWeb extends StatelessWidget {
           left: size.width * 0.35,
           bottom: size.height * 0.1,
           child: IconButton(
+             color: Colors.orangeAccent,
             onPressed: () {
               Navigator.of(context).pop();
             },
@@ -48,6 +49,7 @@ class ScreenOneWeb extends StatelessWidget {
           right: size.width * 0.01,
           bottom: size.height * 0.1,
           child: IconButton(
+             color: Colors.orangeAccent,
             onPressed: () {
               Navigator.push(
                 context,

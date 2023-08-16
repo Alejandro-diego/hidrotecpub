@@ -31,9 +31,10 @@ class ScreenOneMovil extends StatelessWidget {
         Positioned(
           width: size.width * 0.25,
           height: size.height * 0.07,
-          left: size.width * 0.05,
+          left: size.width * 0.01,
           top: size.height * 0.195,
           child: IconButton(
+             color: Colors.orangeAccent,
             onPressed: () {
               Navigator.of(context).pop();
             },
@@ -49,6 +50,7 @@ class ScreenOneMovil extends StatelessWidget {
           right: size.width * 0.01,
           top: size.height * 0.195,
           child: IconButton(
+            color: Colors.orangeAccent,
             onPressed: () {
               Navigator.push(
                 context,

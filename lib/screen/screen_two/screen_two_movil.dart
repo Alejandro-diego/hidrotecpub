@@ -13,7 +13,7 @@ class ScreenTwoMovil extends StatelessWidget {
       children: [
         Positioned(
           top: size.height * 0.03,
-          height: size.height * 0.9,
+          height: size.height * 0.8,
           width: size.width * 0.88,
           left: size.width * 0.08,
           child: Hero(
@@ -30,9 +30,10 @@ class ScreenTwoMovil extends StatelessWidget {
         Positioned(
           width: size.width * 0.25,
           height: size.height * 0.07,
-          left: size.width * 0.05,
+          left: size.width * 0.01,
           top: size.height * 0.195,
           child: IconButton(
+             color: Colors.orangeAccent,
             onPressed: () {
               Navigator.of(context).pop();
             },
@@ -48,6 +49,7 @@ class ScreenTwoMovil extends StatelessWidget {
           right: size.width * 0.01,
           top: size.height * 0.195,
           child: IconButton(
+             color: Colors.orangeAccent,
             onPressed: () {
               Navigator.push(
                 context,
@@ -74,89 +76,91 @@ class ScreenTwoMovil extends StatelessWidget {
               color: Colors.black.withOpacity(.7),
               border: Border.all(color: Colors.black),
             ),
-            child: Column(
-              children: [
-                Padding(
-                  padding: const EdgeInsets.all(8.0),
-                  child: Row(
-                    children: [
-                      Icon(
-                        Icons.check_box,
-                        size: size.height * 0.046,
-                      ),
-                      const SizedBox(
-                        width: 10,
-                      ),
-                      Text(
-                        'Possível fazer automação com a bomba de agua.-',
-                        style: TextStyle(
-                            fontWeight: FontWeight.w900,
-                            fontSize: size.height * 0.02),
-                      ),
-                    ],
+            child: SingleChildScrollView(
+              child: Column(
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Row(
+                      children: [
+                        Icon(
+                          Icons.check_box,
+                          size: size.height * 0.046,
+                        ),
+                        const SizedBox(
+                          width: 10,
+                        ),
+                        Text(
+                          'Possível fazer automação com a \n bomba de agua.-',
+                          style: TextStyle(
+                              fontWeight: FontWeight.w900,
+                              fontSize: size.height * 0.02),
+                        ),
+                      ],
+                    ),
                   ),
-                ),
-                Padding(
-                  padding: const EdgeInsets.all(8.0),
-                  child: Row(
-                    children: [
-                      Icon(
-                        Icons.check_box,
-                        size: size.height * 0.046,
-                      ),
-                      const SizedBox(
-                        width: 10,
-                      ),
-                      Text(
-                        'Programe timer para ligar e desligar \n automaticamente.-',
-                        style: TextStyle(
-                            fontWeight: FontWeight.w900,
-                            fontSize: size.height * 0.02),
-                      ),
-                    ],
+                  Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Row(
+                      children: [
+                        Icon(
+                          Icons.check_box,
+                          size: size.height * 0.046,
+                        ),
+                        const SizedBox(
+                          width: 10,
+                        ),
+                        Text(
+                          'Programe timer para ligar e desligar \n automaticamente.-',
+                          style: TextStyle(
+                              fontWeight: FontWeight.w900,
+                              fontSize: size.height * 0.02),
+                        ),
+                      ],
+                    ),
                   ),
-                ),
-                Padding(
-                  padding: const EdgeInsets.all(8.0),
-                  child: Row(
-                    children: [
-                      Icon(
-                        Icons.check_box,
-                        size: size.height * 0.046,
-                      ),
-                      const SizedBox(
-                        width: 10,
-                      ),
-                      Text(
-                        'Possível fazer automação com as luces Leds.-',
-                        style: TextStyle(
-                            fontWeight: FontWeight.w900,
-                            fontSize: size.height * 0.02),
-                      ),
-                    ],
+                  Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Row(
+                      children: [
+                        Icon(
+                          Icons.check_box,
+                          size: size.height * 0.046,
+                        ),
+                        const SizedBox(
+                          width: 10,
+                        ),
+                        Text(
+                          'Possível fazer automação com as \nluces Leds.-',
+                          style: TextStyle(
+                              fontWeight: FontWeight.w900,
+                              fontSize: size.height * 0.02),
+                        ),
+                      ],
+                    ),
                   ),
-                ),
-                Padding(
-                  padding: const EdgeInsets.all(8.0),
-                  child: Row(
-                    children: [
-                      Icon(
-                        Icons.check_box,
-                        size: size.height * 0.046,
-                      ),
-                      const SizedBox(
-                        width: 10,
-                      ),
-                      Text(
-                        'Programe por hora, dia, e semana.-',
-                        style: TextStyle(
-                            fontWeight: FontWeight.w900,
-                            fontSize: size.height * 0.02),
-                      ),
-                    ],
+                  Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Row(
+                      children: [
+                        Icon(
+                          Icons.check_box,
+                          size: size.height * 0.046,
+                        ),
+                        const SizedBox(
+                          width: 10,
+                        ),
+                        Text(
+                          'Programe por hora, dia, e semana.-',
+                          style: TextStyle(
+                              fontWeight: FontWeight.w900,
+                              fontSize: size.height * 0.02),
+                        ),
+                      ],
+                    ),
                   ),
-                ),
-              ],
+                ],
+              ),
             ),
           ),
         ),

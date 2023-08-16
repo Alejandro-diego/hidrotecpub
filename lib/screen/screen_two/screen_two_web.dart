@@ -28,11 +28,12 @@ class ScreeTwoWeb extends StatelessWidget {
           ),
         ),
         Positioned(
-           width: size.width * 0.25,
+          width: size.width * 0.25,
           height: size.height * 0.07,
           left: size.width * 0.35,
           bottom: size.height * 0.1,
           child: IconButton(
+            color: Colors.orangeAccent,
             onPressed: () {
               Navigator.of(context).pop();
             },
@@ -48,6 +49,7 @@ class ScreeTwoWeb extends StatelessWidget {
           right: size.width * 0.01,
           bottom: size.height * 0.1,
           child: IconButton(
+            color: Colors.orangeAccent,
             onPressed: () {
               Navigator.push(
                 context,
