@@ -125,8 +125,8 @@ class HomeMovil extends StatelessWidget {
                     context,
                     PageTransition(
                       type: PageTransitionType.fade,
-                      child: const InstAppPage1(),
-                    //  child: const PageOne(),
+                     // child: const InstAppPage1(),
+                      child: const PageOne(),
                     ),
                   );
                 },

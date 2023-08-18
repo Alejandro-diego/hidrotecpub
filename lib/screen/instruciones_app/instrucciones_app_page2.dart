@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:hidrotecpub/screen/instruciones_app/instrucciones_app_page3.dart';
+import 'package:page_transition/page_transition.dart';
 
 class InstAppPage2 extends StatefulWidget {
   const InstAppPage2({super.key});
@@ -18,7 +20,7 @@ class _InstAppPage2State extends State<InstAppPage2> {
           child: Column(
             children: [
               const Padding(
-                padding: EdgeInsets.all(8.0),
+                padding: EdgeInsets.only(top: 8.0),
                 child: Text(
                   'Informacoes do App',
                   style: TextStyle(
@@ -39,7 +41,7 @@ class _InstAppPage2State extends State<InstAppPage2> {
                 ),
               ),
               const Padding(
-                padding: EdgeInsets.all(8.0),
+                padding: EdgeInsets.only(bottom: 8.0),
                 child: Text(
                   'Despcripcion',
                   style: TextStyle(fontWeight: FontWeight.w900, fontSize: 25),
@@ -108,7 +110,15 @@ class _InstAppPage2State extends State<InstAppPage2> {
                 height: 50,
                 child: ElevatedButton(
                   style: ElevatedButton.styleFrom(),
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      PageTransition(
+                        type: PageTransitionType.fade,
+                        child: const InstAppPage3(),
+                      ),
+                    );
+                  },
                   child: const Text(
                     'Proximo',
                     style: TextStyle(fontWeight: FontWeight.w900),

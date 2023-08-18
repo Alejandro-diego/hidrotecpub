@@ -3,14 +3,14 @@ import 'package:page_transition/page_transition.dart';
 
 import 'instrucciones_app_page2.dart';
 
-class InstAppPage1 extends StatefulWidget {
-  const InstAppPage1({super.key});
+class InstAppPage3 extends StatefulWidget {
+  const InstAppPage3({super.key});
 
   @override
-  State<InstAppPage1> createState() => _InstAppPage1State();
+  State<InstAppPage3> createState() => _InstAppPage3State();
 }
 
-class _InstAppPage1State extends State<InstAppPage1> {
+class _InstAppPage3State extends State<InstAppPage3> {
   @override
   Widget build(BuildContext context) {
     final size = MediaQuery.of(context).size;
