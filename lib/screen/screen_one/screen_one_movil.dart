@@ -50,7 +50,8 @@ class ScreenOneMovil extends StatelessWidget {
           right: size.width * 0.01,
           top: size.height * 0.195,
           child: IconButton(
-            color: Colors.orangeAccent,
+            
+            color: Colors.orange,
             onPressed: () {
               Navigator.push(
                 context,
@@ -63,6 +64,7 @@ class ScreenOneMovil extends StatelessWidget {
             icon: const Icon(
               Icons.arrow_forward_ios,
               size: 40.0,
+              
             ),
           ),
         ),

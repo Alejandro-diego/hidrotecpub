@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:page_transition/page_transition.dart';
+
+import 'instrucciones_app_page2.dart';
 
 class InstAppPage1 extends StatefulWidget {
   const InstAppPage1({super.key});
@@ -132,7 +135,16 @@ class _InstAppPage1State extends State<InstAppPage1> {
             height: 50,
             child: ElevatedButton(
               style: ElevatedButton.styleFrom(),
-              onPressed: () {},
+              onPressed: () {
+
+                 Navigator.push(
+                  context,
+                  PageTransition(
+                    type: PageTransitionType.fade,
+                    child: const InstAppPage2(),
+                  ),
+                );
+              },
               child: const Text(
                 'Proximo',
                 style: TextStyle(fontWeight: FontWeight.w900),
