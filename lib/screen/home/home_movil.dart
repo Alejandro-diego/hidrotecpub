@@ -2,9 +2,7 @@ import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:page_transition/page_transition.dart';
-
 import '../../const.dart';
-import '../instruciones_app/instrucciones_app_page1.dart';
 import '../screen_one/screen_one.dart';
 
 class HomeMovil extends StatelessWidget {

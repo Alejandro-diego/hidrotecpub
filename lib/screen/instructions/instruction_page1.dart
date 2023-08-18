@@ -15,7 +15,7 @@ class InstructionPage1 extends StatefulWidget {
 
 class _InstructionPage1State extends State<InstructionPage1> {
   String instruccion =
-      'A primeira coisa que vamos fazer é criar uma conta para poder operar nosso aplicativo, ou inserir nosso e-mail sim ja temos conta de antes.-';
+      'Para o primeiro acesso ao aplicativo. Clique em criar conta.- ';
 
   @override
   Widget build(BuildContext context) {

@@ -15,7 +15,7 @@ class InstructionPage2 extends StatefulWidget {
 
 class _InstructionPage2State extends State<InstructionPage2> {
   String instruccion =
-      'Prencher os datos, Nome, E-mail valido, senha(6 digitos), numero de Dipositivo, CEP do local.-  ';
+      'Preencha os espaços com seus dados. Senha(6 dígitos).-  ';
   @override
   Widget build(BuildContext context) {
     return Scaffold(
