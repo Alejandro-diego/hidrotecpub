@@ -37,7 +37,7 @@ class _MovilPageState extends State<MovilPage> {
         Padding(
           padding: const EdgeInsets.all(12.0),
           child: Container(
-            height: 300,
+            height: 400,
             width: 300,
             decoration: BoxDecoration(
               image: DecorationImage(
@@ -59,7 +59,7 @@ class _MovilPageState extends State<MovilPage> {
               ),
             ),
             Container(
-              height: size.height * 0.4,
+              height: size.height * 0.2,
               width: size.width * 0.7,
               decoration: BoxDecoration(
                   color: Colors.black.withOpacity(.7),
