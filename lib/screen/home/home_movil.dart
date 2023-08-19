@@ -93,12 +93,13 @@ class HomeMovil extends StatelessWidget {
           child: Padding(
             padding:const  EdgeInsets.only(bottom: 100),
             child: DefaultTextStyle(
-              style: const TextStyle(fontSize: 25,
+              style: const TextStyle(fontSize: 22,
               color: Colors.white,
                         fontWeight: FontWeight.w900),
               child: AnimatedTextKit(
                
                 animatedTexts: [
+                  FadeAnimatedText('Para uma maior comodidade e\n economia de energia electrica'),
                   FadeAnimatedText('Tenha o control de sua piscina',
                       
                       ),

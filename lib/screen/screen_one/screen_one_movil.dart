@@ -82,6 +82,10 @@ class ScreenOneMovil extends StatelessWidget {
             child:  SingleChildScrollView(
               child: Column(
                 children: [
+                 Padding(
+                   padding: const EdgeInsets.only(top :8.0),
+                   child:   Text('O Aplicativo Hidrotec ofrece:',style: TextStyle(fontSize: size.height * 0.025, color: Colors.blue ),),
+                 ),
                   Padding(
                     padding: const EdgeInsets.all(8.0),
                     child: Row(
