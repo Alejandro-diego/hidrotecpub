@@ -21,7 +21,7 @@ class _InstAppPage1State extends State<InstAppPage1> {
           const Padding(
             padding: EdgeInsets.all(8.0),
             child: Text(
-              'Informacoes do App',
+              'Informações do App',
               style: TextStyle(
                   color: Colors.lightBlueAccent,
                   fontSize: 25,
@@ -57,7 +57,7 @@ class _InstAppPage1State extends State<InstAppPage1> {
                             fontWeight: FontWeight.w700, color: Colors.orange),
                       ),
                       const Text(
-                          'Indica a temperatura seleccionada \n por os botones subir e baixar.'),
+                          'As setas permitem o ajuste da temperatura desejada.'),
                       Padding(
                         padding: const EdgeInsets.all(8.0),
                         child: Container(
@@ -76,28 +76,27 @@ class _InstAppPage1State extends State<InstAppPage1> {
                             fontWeight: FontWeight.w700, color: Colors.orange),
                       ),
                       const Text(
-                          'Indica a temperatura atual \n del agua de sua piscinas.'),
+                          'Indica a temperatura atual \nem que se encontra a água da piscina.'),
                       const Text(
                         'Bomba',
                         style: TextStyle(
                             fontWeight: FontWeight.w700, color: Colors.orange),
                       ),
-                      const Text(
-                          'Liga e deliga em forma manual \n a bomba de agua.'),
+                      const Text('Liga e deliga no formato manual.-'),
                       const Text(
                         'Auto',
                         style: TextStyle(
                             fontWeight: FontWeight.w700, color: Colors.orange),
                       ),
                       const Text(
-                          'Liga e desliga em forma automatica \n quando atingir a temperatura \nseleccionada pelo SET.'),
+                          'Liga e desliga no formato automático \n quando atingir a temperatura \nseleccionada pelo "TempSeT".'),
                       const Text(
                         'Disp:',
                         style: TextStyle(
                             fontWeight: FontWeight.w700, color: Colors.orange),
                       ),
                       const Text(
-                          'Indica o numero de seu \n dispositivo HIDROTEC.'),
+                          'Indica o número de seu \n dispositivo(caixa controle) .'),
                       const Padding(
                         padding: EdgeInsets.all(8.0),
                         child: Row(
@@ -137,8 +136,7 @@ class _InstAppPage1State extends State<InstAppPage1> {
             child: ElevatedButton(
               style: ElevatedButton.styleFrom(),
               onPressed: () {
-
-                 Navigator.push(
+                Navigator.push(
                   context,
                   PageTransition(
                     type: PageTransitionType.fade,

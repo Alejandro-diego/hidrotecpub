@@ -22,7 +22,7 @@ class _InstAppPage2State extends State<InstAppPage2> {
               const Padding(
                 padding: EdgeInsets.only(top: 8.0),
                 child: Text(
-                  'Informacoes do App',
+                  'Informações do App',
                   style: TextStyle(
                       color: Colors.lightBlueAccent,
                       fontSize: 25,
@@ -38,13 +38,6 @@ class _InstAppPage2State extends State<InstAppPage2> {
                     fit: BoxFit.cover,
                     image: AssetImage('assets/info1.png'),
                   ),
-                ),
-              ),
-              const Padding(
-                padding: EdgeInsets.only(bottom: 8.0),
-                child: Text(
-                  'Despcripcion',
-                  style: TextStyle(fontWeight: FontWeight.w900, fontSize: 25),
                 ),
               ),
               Container(
@@ -65,7 +58,7 @@ class _InstAppPage2State extends State<InstAppPage2> {
                             fontWeight: FontWeight.w700, color: Colors.orange),
                       ),
                       const Text(
-                          ' Permite que você assuma o controle total da iluminação do sua piscina.\nAproveite as inúmeras combinações de cores e efeitos de iluminação.'),
+                          ' Permite a escolha das cores ledes desejadas.\nAproveite as inúmeras combinações de cores e efeitos de iluminação.'),
                       Row(
                         children: [
                           Padding(
@@ -97,7 +90,8 @@ class _InstAppPage2State extends State<InstAppPage2> {
                         style: TextStyle(
                             fontWeight: FontWeight.w700, color: Colors.orange),
                       ),
-                      const Text('Indica o estado do tempo de seu local .'),
+                      const Text(
+                          'Indica a temperatura e as condições do tempo de seu local .'),
                     ],
                   ),
                 ),

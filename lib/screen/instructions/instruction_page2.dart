@@ -15,7 +15,7 @@ class InstructionPage2 extends StatefulWidget {
 
 class _InstructionPage2State extends State<InstructionPage2> {
   String instruccion =
-      'Preencha os espaços com seus dados. Senha(6 dígitos).-  ';
+      'Preencha os espaços com seus dados. Senha(6 dígitos).\n Número do dispositivo se encontra na parte lateral da caixa controle.\n Clique em "Criar Conta".-  ';
   @override
   Widget build(BuildContext context) {
     return Scaffold(

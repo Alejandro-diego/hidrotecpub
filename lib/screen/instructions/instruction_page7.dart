@@ -5,7 +5,6 @@ import '../../widget/desktop_page.dart';
 import '../../widget/movil_page.dart';
 import '../instruciones_app/instrucciones_app_page1.dart';
 
-
 class InstructionPage7 extends StatefulWidget {
   const InstructionPage7({super.key});
 
@@ -14,7 +13,8 @@ class InstructionPage7 extends StatefulWidget {
 }
 
 class _InstructionPage7State extends State<InstructionPage7> {
-  String instruccion = 'Seu App esta pronta para usar';
+  String instruccion =
+      'Seu dispositivo(caixa controle) e app Hidrotec foi instaldo com sucesso !!';
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -40,8 +40,7 @@ class _InstructionPage7State extends State<InstructionPage7> {
                 );
               },
             ),
-
-             desktop: DesktopPage(
+            desktop: DesktopPage(
               step: 7,
               assetImage: 'assets/inst7.png',
               textIntruction: instruccion,
@@ -55,13 +54,6 @@ class _InstructionPage7State extends State<InstructionPage7> {
                 );
               },
             ),
-
-
-
-
-
-
-
           )
         ],
       ),

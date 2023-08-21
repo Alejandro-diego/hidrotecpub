@@ -15,7 +15,7 @@ class InstructionPage3 extends StatefulWidget {
 
 class _InstructionPage3State extends State<InstructionPage3> {
   String instruccion =
-      'Uma vez feito o login vamos pra "Menu" na parte superior direito.-';
+      'No canto superior direito, nos três pontos verticais você terá acesso ao menu.-';
 
   @override
   Widget build(BuildContext context) {

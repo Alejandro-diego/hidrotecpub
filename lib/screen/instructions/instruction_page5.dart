@@ -14,8 +14,8 @@ class InstructionPage5 extends StatefulWidget {
 }
 
 class _InstructionPage5State extends State<InstructionPage5> {
-  String instruccion = 'Comprobar sim nosso Dispositvo Hidrotec esta ligado em nossa piscina, e escoller Hidrotec_BLE_Disp.-';
-
+  String instruccion =
+      'Certifique-se que o dispositvo Hidrotec_BLE_Disp foi encontrado e clique nele.-';
 
   @override
   Widget build(BuildContext context) {
@@ -28,23 +28,7 @@ class _InstructionPage5State extends State<InstructionPage5> {
         mainAxisSize: MainAxisSize.min,
         children: [
           Responsive(
-              mobile: MovilPage(
-            step: 5,
-            assetImage: 'assets/inst5.png',
-            textIntruction: instruccion,
-            onPress: () {
-              Navigator.push(
-                context,
-                PageTransition(
-                  type: PageTransitionType.fade,
-                  child: const InstructionPage6(),
-                ),
-              );
-            },
-          ),
-
-
-             desktop: DesktopPage(
+            mobile: MovilPage(
               step: 5,
               assetImage: 'assets/inst5.png',
               textIntruction: instruccion,
@@ -58,21 +42,20 @@ class _InstructionPage5State extends State<InstructionPage5> {
                 );
               },
             ),
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
+            desktop: DesktopPage(
+              step: 5,
+              assetImage: 'assets/inst5.png',
+              textIntruction: instruccion,
+              onPress: () {
+                Navigator.push(
+                  context,
+                  PageTransition(
+                    type: PageTransitionType.fade,
+                    child: const InstructionPage6(),
+                  ),
+                );
+              },
+            ),
           ),
         ],
       ),

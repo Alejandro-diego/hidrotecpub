@@ -15,7 +15,7 @@ class InstructionPage1 extends StatefulWidget {
 
 class _InstructionPage1State extends State<InstructionPage1> {
   String instruccion =
-      'Para o primeiro acesso ao aplicativo. Clique em criar conta.- ';
+      'Para o primeiro acesso ao app:\n Clique em criar conta.- ';
 
   @override
   Widget build(BuildContext context) {
@@ -42,7 +42,6 @@ class _InstructionPage1State extends State<InstructionPage1> {
                 );
               },
             ),
-         
             desktop: DesktopPage(
               step: 1,
               assetImage: 'assets/inst1.png',
@@ -57,8 +56,6 @@ class _InstructionPage1State extends State<InstructionPage1> {
                 );
               },
             ),
-
-
           )
         ],
       ),

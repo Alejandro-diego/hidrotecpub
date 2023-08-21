@@ -24,7 +24,7 @@ class _InstAppPage3State extends State<InstAppPage3> {
               const Padding(
                 padding: EdgeInsets.only(top: 8.0),
                 child: Text(
-                  'Informacoes do App',
+                  'Informações do App',
                   style: TextStyle(
                       color: Colors.lightBlueAccent,
                       fontSize: 25,
@@ -40,13 +40,6 @@ class _InstAppPage3State extends State<InstAppPage3> {
                     fit: BoxFit.cover,
                     image: AssetImage('assets/info3.png'),
                   ),
-                ),
-              ),
-              const Padding(
-                padding: EdgeInsets.only(bottom: 8.0),
-                child: Text(
-                  'Despcripcion',
-                  style: TextStyle(fontWeight: FontWeight.w900, fontSize: 25),
                 ),
               ),
               Container(
@@ -95,62 +88,52 @@ class _InstAppPage3State extends State<InstAppPage3> {
                               ),
                             ),
                           ),
-                        const   Padding(
-                            padding:  EdgeInsets.all(8.0),
-                            child:  Text('Habilta o evento.'),
+                          const Padding(
+                            padding: EdgeInsets.all(8.0),
+                            child: Text('Habilta o evento.'),
                           ),
                         ],
                       ),
-                          const Text(
+                      const Text(
                         'Ative uma automação',
                         style: TextStyle(
                             fontWeight: FontWeight.w700, color: Colors.orange),
                       ),
-
                       Container(
-                              height: 100,
-                              width: 300,
-                              decoration: const BoxDecoration(
-                                image: DecorationImage(
-                                  image: AssetImage('assets/info6.png'),
-                                ),
-                              ),
-                            ),
-
-
-
-
-
-
-
-
-                  
-                      const Text('Aperte em "Ligar" para escolher um horario de inicio.'),
-                       const Text('Marque em "Todos os dias" para una automação semanal.'),
-
+                        height: 100,
+                        width: 300,
+                        decoration: const BoxDecoration(
+                          image: DecorationImage(
+                            image: AssetImage('assets/info6.png'),
+                          ),
+                        ),
+                      ),
+                      const Text(
+                          'Aperte em "Ligar" para selecionar um horário de inicio.'),
+                      const Text(
+                          'Marque em "Todos os dias" permite uma automação semanal diária.'),
                       Container(
-                              height: 100,
-                              width: 300,
-                              decoration: const BoxDecoration(
-                                image: DecorationImage(
-                                  image: AssetImage('assets/info7.png'),
-                                ),
-                              ),
-                            ),
-
-                             const Text('Desmarcar em "Todos os dias" para una automacao diaria\n escolhas os dias pra automação.'),
-                             Container(
-                              height: 100,
-                              width: 300,
-                              decoration: const BoxDecoration(
-                                image: DecorationImage(
-                                  image: AssetImage('assets/info8.png'),
-                                ),
-                              ),
-                            ),
-                            const Text('Aperte em "Desligar" para escolher um horario de fin.'),
-
-                       
+                        height: 100,
+                        width: 300,
+                        decoration: const BoxDecoration(
+                          image: DecorationImage(
+                            image: AssetImage('assets/info7.png'),
+                          ),
+                        ),
+                      ),
+                      const Text(
+                          'Desmarcar em "Todos os dias"  permite uma automação por \n dias da semana selecionados.-'),
+                      Container(
+                        height: 100,
+                        width: 300,
+                        decoration: const BoxDecoration(
+                          image: DecorationImage(
+                            image: AssetImage('assets/info8.png'),
+                          ),
+                        ),
+                      ),
+                      const Text(
+                          'Aperte em "Desligar" para escolher um horario de fin.'),
                     ],
                   ),
                 ),

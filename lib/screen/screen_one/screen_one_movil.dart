@@ -34,7 +34,7 @@ class ScreenOneMovil extends StatelessWidget {
           left: size.width * 0.01,
           top: size.height * 0.195,
           child: IconButton(
-             color: Colors.orangeAccent,
+            color: Colors.orangeAccent,
             onPressed: () {
               Navigator.of(context).pop();
             },
@@ -50,7 +50,6 @@ class ScreenOneMovil extends StatelessWidget {
           right: size.width * 0.01,
           top: size.height * 0.195,
           child: IconButton(
-            
             color: Colors.orange,
             onPressed: () {
               Navigator.push(
@@ -64,7 +63,6 @@ class ScreenOneMovil extends StatelessWidget {
             icon: const Icon(
               Icons.arrow_forward_ios,
               size: 40.0,
-              
             ),
           ),
         ),
@@ -79,13 +77,17 @@ class ScreenOneMovil extends StatelessWidget {
               color: Colors.black.withOpacity(.7),
               border: Border.all(color: Colors.black),
             ),
-            child:  SingleChildScrollView(
+            child: SingleChildScrollView(
               child: Column(
                 children: [
-                 Padding(
-                   padding: const EdgeInsets.only(top :8.0),
-                   child:   Text('O Aplicativo Hidrotec ofrece:',style: TextStyle(fontSize: size.height * 0.025, color: Colors.blue ),),
-                 ),
+                  Padding(
+                    padding: const EdgeInsets.only(top: 8.0),
+                    child: Text(
+                      'O Aplicativo Hidrotec oferece:',
+                      style: TextStyle(
+                          fontSize: size.height * 0.025, color: Colors.blue),
+                    ),
+                  ),
                   Padding(
                     padding: const EdgeInsets.all(8.0),
                     child: Row(
@@ -94,70 +96,54 @@ class ScreenOneMovil extends StatelessWidget {
                           Icons.check_box,
                           size: size.height * 0.046,
                         ),
-                     const    SizedBox(
+                        const SizedBox(
                           width: 10,
                         ),
                         Text(
-                          'Controle e configuração de \n temperatura remota da piscina.-',
+                          'O Controle e configuração \n (automático e ou manual)\n da temperatura da água da piscina .-',
                           style: TextStyle(
-                              fontWeight: FontWeight.w900, fontSize: size.height * 0.025 ),
+                              fontWeight: FontWeight.w900,
+                              fontSize: size.height * 0.025),
                         ),
                       ],
                     ),
                   ),
                   Padding(
-                    padding: const  EdgeInsets.all(8.0),
-                    child: Row(
-                      children: [
-                        Icon(
-                          Icons.check_box,
-                          size:  size.height * 0.046,
-                        ),
-                     const    SizedBox(
-                          width: 10,
-                        ),
-                        Text(
-                          'Display da temperatura do tempo \n em tempo real.-',
-                          style: TextStyle(
-                              fontWeight: FontWeight.w900, fontSize: size.height * 0.025),
-                        ),
-                      ],
-                    ),
-                  ),
-                  Padding(
-                    padding:  const EdgeInsets.all(8.0),
+                    padding: const EdgeInsets.all(8.0),
                     child: Row(
                       children: [
                         Icon(
                           Icons.check_box,
                           size: size.height * 0.046,
                         ),
-                     const    SizedBox(
+                        const SizedBox(
+                          width: 10,
+                        ),
+                        Text(
+                          'A temperatura da água em que\n a mesma se encontra \n em tempo real.-',
+                          style: TextStyle(
+                              fontWeight: FontWeight.w900,
+                              fontSize: size.height * 0.025),
+                        ),
+                      ],
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Row(
+                      children: [
+                        Icon(
+                          Icons.check_box,
+                          size: size.height * 0.046,
+                        ),
+                        const SizedBox(
                           width: 10,
                         ),
                         Text(
                           'Controle automático e manual\n da temperatura da água.-',
                           style: TextStyle(
-                              fontWeight: FontWeight.w900, fontSize: size.height * 0.025),
-                        ),
-                      ],
-                    ),
-                  ),
-                  Padding(
-                    padding: const  EdgeInsets.all(8.0),
-                    child: Row(
-                      children: [
-                        Icon(
-                          Icons.check_box,
-                          size: size.height * 0.046,
-                        ),
-                     const    SizedBox(
-                          width: 10,
-                        ),
-                        Text(
-                          'Controle da bomba a partir do\n aplicativo móvel.-',
-                          style: TextStyle(
-                              fontWeight: FontWeight.w900, fontSize: size.height * 0.025),
+                              fontWeight: FontWeight.w900,
+                              fontSize: size.height * 0.025),
                         ),
                       ],
                     ),
@@ -170,13 +156,14 @@ class ScreenOneMovil extends StatelessWidget {
                           Icons.check_box,
                           size: size.height * 0.046,
                         ),
-                      const   SizedBox(
+                        const SizedBox(
                           width: 10,
                         ),
                         Text(
-                          'Controle remoto de luzes LED do\n dispositivo móvel.-',
+                          'Controle da bomba e luzes leds através do\n aplicativo, no dispositivo móvel.-',
                           style: TextStyle(
-                              fontWeight: FontWeight.w900, fontSize: size.height * 0.025),
+                              fontWeight: FontWeight.w900,
+                              fontSize: size.height * 0.025),
                         ),
                       ],
                     ),

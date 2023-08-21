@@ -15,7 +15,7 @@ class InstructionPage4 extends StatefulWidget {
 
 class _InstructionPage4State extends State<InstructionPage4> {
   String instruccion =
-      'Comprobar sim nosso BLUETOOTH de nosso telefone esta ligado, e escoller ParearDisp.-';
+      'Para vincular o dispositivo(caixa controle) escolha a opção(parear dispositivo).\n Certifique-se que o Bluetooth do seu telefone está ativado.-';
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -41,7 +41,7 @@ class _InstructionPage4State extends State<InstructionPage4> {
                 );
               },
             ),
-              desktop: DesktopPage(
+            desktop: DesktopPage(
               step: 4,
               assetImage: 'assets/inst4.png',
               textIntruction: instruccion,
@@ -55,13 +55,6 @@ class _InstructionPage4State extends State<InstructionPage4> {
                 );
               },
             ),
-
-
-
-
-
-
-
           ),
         ],
       ),

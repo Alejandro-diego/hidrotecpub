@@ -33,7 +33,7 @@ class ScreenTwoMovil extends StatelessWidget {
           left: size.width * 0.01,
           top: size.height * 0.195,
           child: IconButton(
-             color: Colors.orangeAccent,
+            color: Colors.orangeAccent,
             onPressed: () {
               Navigator.of(context).pop();
             },
@@ -49,7 +49,7 @@ class ScreenTwoMovil extends StatelessWidget {
           right: size.width * 0.01,
           top: size.height * 0.195,
           child: IconButton(
-             color: Colors.orangeAccent,
+            color: Colors.orangeAccent,
             onPressed: () {
               Navigator.push(
                 context,
@@ -80,84 +80,21 @@ class ScreenTwoMovil extends StatelessWidget {
               child: Column(
                 children: [
                   Padding(
-                    padding: const EdgeInsets.all(8.0),
-                    child: Row(
-                      children: [
-                        Icon(
-                          Icons.check_box,
-                          size: size.height * 0.046,
-                        ),
-                        const SizedBox(
-                          width: 10,
-                        ),
-                        Text(
-                          'Possível fazer automação com a \n bomba de agua.-',
-                          style: TextStyle(
-                              fontWeight: FontWeight.w900,
-                              fontSize: size.height * 0.025),
-                        ),
-                      ],
+                    padding: const EdgeInsets.only(top: 8.0, bottom: 10),
+                    child: Text(
+                      'Aqui você adiciona eventos:',
+                      style: TextStyle(
+                          color: Colors.blue, fontSize: size.height * 0.025),
                     ),
                   ),
-                  Padding(
-                    padding: const EdgeInsets.all(8.0),
-                    child: Row(
-                      children: [
-                        Icon(
-                          Icons.check_box,
-                          size: size.height * 0.046,
-                        ),
-                        const SizedBox(
-                          width: 10,
-                        ),
-                        Text(
-                          'Programe timer para ligar e desligar \n automaticamente.-',
-                          style: TextStyle(
-                              fontWeight: FontWeight.w900,
-                              fontSize: size.height * 0.025),
-                        ),
-                      ],
-                    ),
+                  const SizedBox(
+                    width: 10,
                   ),
-                  Padding(
-                    padding: const EdgeInsets.all(8.0),
-                    child: Row(
-                      children: [
-                        Icon(
-                          Icons.check_box,
-                          size: size.height * 0.046,
-                        ),
-                        const SizedBox(
-                          width: 10,
-                        ),
-                        Text(
-                          'Possível fazer automação com as \nluces Leds.-',
-                          style: TextStyle(
-                              fontWeight: FontWeight.w900,
-                              fontSize: size.height * 0.025),
-                        ),
-                      ],
-                    ),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.all(8.0),
-                    child: Row(
-                      children: [
-                        Icon(
-                          Icons.check_box,
-                          size: size.height * 0.046,
-                        ),
-                        const SizedBox(
-                          width: 10,
-                        ),
-                        Text(
-                          'Programe por hora, dia, e semana.-',
-                          style: TextStyle(
-                              fontWeight: FontWeight.w900,
-                              fontSize: size.height * 0.025),
-                        ),
-                      ],
-                    ),
+                  Text(
+                    'Seleciona em quais dias da semana\n e a hora que você gostaria que\n a bomba e as luzes leds de sua\n piscina liguem e desliguem automaticamente.-',
+                    style: TextStyle(
+                        fontWeight: FontWeight.w900,
+                        fontSize: size.height * 0.025),
                   ),
                 ],
               ),

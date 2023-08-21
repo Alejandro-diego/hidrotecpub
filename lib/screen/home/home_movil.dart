@@ -88,24 +88,23 @@ class HomeMovil extends StatelessWidget {
             ),
           ),
         ),
-         Align(
+        Align(
           alignment: Alignment.bottomCenter,
           child: Padding(
-            padding:const  EdgeInsets.only(bottom: 100),
+            padding: const EdgeInsets.only(bottom: 100),
             child: DefaultTextStyle(
-              style: const TextStyle(fontSize: 22,
-              color: Colors.white,
-                        fontWeight: FontWeight.w900),
+              style: const TextStyle(
+                  fontSize: 22,
+                  color: Colors.white,
+                  fontWeight: FontWeight.w900),
               child: AnimatedTextKit(
-               
+                pause: const Duration(milliseconds: 4000),
                 animatedTexts: [
-                  FadeAnimatedText('Para uma maior comodidade e\n economia de energia electrica'),
-                  FadeAnimatedText('Tenha o control de sua piscina',
-                      
-                      ),
-                  FadeAnimatedText('Na sua mão',
-                    
-                    ),
+                  FadeAnimatedText('Para uma maior comodidade '),
+                  FadeAnimatedText('e economia de energia elétrica'),
+                  FadeAnimatedText(
+                    'Tenha o controle de sua piscina',
+                  ),
                 ],
               ),
             ),
@@ -124,7 +123,7 @@ class HomeMovil extends StatelessWidget {
                     context,
                     PageTransition(
                       type: PageTransitionType.fade,
-                     // child: const InstAppPage1(),
+                      // child: const InstAppPage1(),
                       child: const PageOne(),
                     ),
                   );

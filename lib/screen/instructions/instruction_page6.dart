@@ -5,7 +5,6 @@ import 'package:page_transition/page_transition.dart';
 import '../../widget/desktop_page.dart';
 import '../../widget/movil_page.dart';
 
-
 class InstructionPage6 extends StatefulWidget {
   const InstructionPage6({super.key});
 
@@ -14,7 +13,8 @@ class InstructionPage6 extends StatefulWidget {
 }
 
 class _InstructionPage6State extends State<InstructionPage6> {
-String instruccion = 'Comprobar sim nosso Router de Wi-Fi esta ligado, e escoller nossa rede e senha.-';
+  String instruccion =
+      'Selecione sua rede de Wi-Fi e informe o nome da rede e sua senha e confirme.-';
 
   @override
   Widget build(BuildContext context) {
@@ -27,22 +27,7 @@ String instruccion = 'Comprobar sim nosso Router de Wi-Fi esta ligado, e escolle
         mainAxisSize: MainAxisSize.min,
         children: [
           Responsive(
-              mobile: MovilPage(
-            step: 6,
-            assetImage: 'assets/inst6.png',
-            textIntruction: instruccion,
-            onPress: () {
-              Navigator.push(
-                context,
-                PageTransition(
-                  type: PageTransitionType.fade,
-                  child: const InstructionPage7(),
-                ),
-              );
-            },
-          ),
-
-             desktop: DesktopPage(
+            mobile: MovilPage(
               step: 6,
               assetImage: 'assets/inst6.png',
               textIntruction: instruccion,
@@ -56,14 +41,20 @@ String instruccion = 'Comprobar sim nosso Router de Wi-Fi esta ligado, e escolle
                 );
               },
             ),
-          
-          
-          
-          
-          
-          
-          
-          
+            desktop: DesktopPage(
+              step: 6,
+              assetImage: 'assets/inst6.png',
+              textIntruction: instruccion,
+              onPress: () {
+                Navigator.push(
+                  context,
+                  PageTransition(
+                    type: PageTransitionType.fade,
+                    child: const InstructionPage7(),
+                  ),
+                );
+              },
+            ),
           ),
         ],
       ),
