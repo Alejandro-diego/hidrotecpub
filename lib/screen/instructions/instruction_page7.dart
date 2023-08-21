@@ -20,7 +20,7 @@ class _InstructionPage7State extends State<InstructionPage7> {
     return Scaffold(
       backgroundColor: const Color.fromARGB(255, 20, 55, 83),
       appBar: AppBar(
-        title: const Text('Instruções Paso 7'),
+        title: const Text('Instruções Passo 7'),
       ),
       body: Column(
         mainAxisSize: MainAxisSize.min,

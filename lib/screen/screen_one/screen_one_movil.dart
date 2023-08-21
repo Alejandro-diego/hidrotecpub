@@ -100,7 +100,7 @@ class ScreenOneMovil extends StatelessWidget {
                           width: 10,
                         ),
                         Text(
-                          'O Controle e configuração \n (automático e ou manual)\n da temperatura da água da piscina .-',
+                          'O Controle e configuração \n (automático e ou manual) da\ntemperatura da água da piscina.-',
                           style: TextStyle(
                               fontWeight: FontWeight.w900,
                               fontSize: size.height * 0.025),
@@ -160,7 +160,7 @@ class ScreenOneMovil extends StatelessWidget {
                           width: 10,
                         ),
                         Text(
-                          'Controle da bomba e luzes leds através do\n aplicativo, no dispositivo móvel.-',
+                          'Controle da bomba e luzes\n leds através do aplicativo,\n no dispositivo móvel.-',
                           style: TextStyle(
                               fontWeight: FontWeight.w900,
                               fontSize: size.height * 0.025),

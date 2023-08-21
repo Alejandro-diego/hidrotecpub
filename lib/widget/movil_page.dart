@@ -59,7 +59,7 @@ class _MovilPageState extends State<MovilPage> {
               ),
             ),
             Container(
-              height: size.height * 0.2,
+              height: size.height * 0.25,
               width: size.width * 0.7,
               decoration: BoxDecoration(
                   color: Colors.black.withOpacity(.7),

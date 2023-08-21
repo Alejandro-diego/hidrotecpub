@@ -21,7 +21,7 @@ class _InstructionPage2State extends State<InstructionPage2> {
     return Scaffold(
       backgroundColor: const Color.fromARGB(255, 20, 55, 83),
       appBar: AppBar(
-        title: const Text('Instruções Paso 2'),
+        title: const Text('Instruções Passo 2'),
       ),
       body: Column(
         mainAxisSize: MainAxisSize.min,
