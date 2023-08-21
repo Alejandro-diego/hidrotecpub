@@ -98,7 +98,7 @@ class HomeMovil extends StatelessWidget {
                   color: Colors.white,
                   fontWeight: FontWeight.w900),
               child: AnimatedTextKit(
-                pause: const Duration(milliseconds: 4000),
+              
                 animatedTexts: [
                   FadeAnimatedText('Para uma maior comodidade '),
                   FadeAnimatedText('e economia de energia elétrica'),

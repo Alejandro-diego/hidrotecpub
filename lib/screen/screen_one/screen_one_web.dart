@@ -33,7 +33,7 @@ class ScreenOneWeb extends StatelessWidget {
           left: size.width * 0.35,
           bottom: size.height * 0.1,
           child: IconButton(
-             color: Colors.orangeAccent,
+            color: Colors.orangeAccent,
             onPressed: () {
               Navigator.of(context).pop();
             },
@@ -49,7 +49,7 @@ class ScreenOneWeb extends StatelessWidget {
           right: size.width * 0.01,
           bottom: size.height * 0.1,
           child: IconButton(
-             color: Colors.orangeAccent,
+            color: Colors.orangeAccent,
             onPressed: () {
               Navigator.push(
                 context,
@@ -76,86 +76,98 @@ class ScreenOneWeb extends StatelessWidget {
               color: Colors.black.withOpacity(.7),
               border: Border.all(color: Colors.black),
             ),
-            child: const SingleChildScrollView(
+            child: SingleChildScrollView(
               child: Column(
                 children: [
                   Padding(
-                    padding: EdgeInsets.all(8.0),
+                    padding: const EdgeInsets.only(top: 8.0),
+                    child: Text(
+                      'O Aplicativo Hidrotec oferece:',
+                      style: TextStyle(
+                          fontSize: size.height * 0.025, color: Colors.blue),
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.all(8.0),
                     child: Row(
                       children: [
-                        Icon(
+                        const Icon(
                           Icons.check_box,
                           size: 36,
                         ),
-                        SizedBox(
+                        const SizedBox(
                           width: 10,
                         ),
                         Text(
-                          'Controle e configuração de temperatura remota da piscina.-',
+                          'O Controle e configuração (automático e ou manual) da\ntemperatura da água da piscina.-',
                           style: TextStyle(
-                              fontWeight: FontWeight.w900, fontSize: 18),
+                              fontWeight: FontWeight.w900,
+                              fontSize: size.height * 0.025),
                         ),
                       ],
                     ),
                   ),
                   Padding(
-                    padding: EdgeInsets.all(8.0),
+                    padding: const EdgeInsets.all(8.0),
                     child: Row(
                       children: [
-                        Icon(
+                        const Icon(
                           Icons.check_box,
                           size: 36,
                         ),
-                        SizedBox(
+                        const SizedBox(
                           width: 10,
                         ),
                         Text(
-                          'Display da temperatura do tempo em tempo real.-',
+                          'A temperatura da água em que a mesma se encontra \n em tempo real.-',
                           style: TextStyle(
-                              fontWeight: FontWeight.w900, fontSize: 18),
+                              fontWeight: FontWeight.w900,
+                              fontSize: size.height * 0.025),
                         ),
                       ],
                     ),
                   ),
                   Padding(
-                    padding: EdgeInsets.all(8.0),
+                    padding: const EdgeInsets.all(8.0),
                     child: Row(
                       children: [
-                        Icon(
+                        const Icon(
                           Icons.check_box,
                           size: 36,
                         ),
-                        SizedBox(
+                        const SizedBox(
                           width: 10,
                         ),
                         Text(
-                          'Controle automático e manual da temperatura da água.-',
+                          'Controle automático e manual da temperatura\n da água.-',
                           style: TextStyle(
-                              fontWeight: FontWeight.w900, fontSize: 18),
+                              fontWeight: FontWeight.w900,
+                              fontSize: size.height * 0.025),
                         ),
                       ],
                     ),
                   ),
                   Padding(
-                    padding: EdgeInsets.all(8.0),
+                    padding: const EdgeInsets.all(8.0),
                     child: Row(
                       children: [
-                        Icon(
+                        const Icon(
                           Icons.check_box,
                           size: 36,
                         ),
-                        SizedBox(
+                        const SizedBox(
                           width: 10,
                         ),
                         Text(
-                          'Controle da bomba a partir do  aplicativo móvel.-',
+                          'Controle da bomba e luzes leds através do aplicativo,\n no dispositivo móvel.-',
                           style: TextStyle(
-                              fontWeight: FontWeight.w900, fontSize: 18),
+                              fontWeight: FontWeight.w900,
+                              fontSize: size.height * 0.025),
                         ),
                       ],
                     ),
                   ),
-                  Padding(
+                  const Padding(
                     padding: EdgeInsets.all(8.0),
                     child: Row(
                       children: [
@@ -167,26 +179,7 @@ class ScreenOneWeb extends StatelessWidget {
                           width: 10,
                         ),
                         Text(
-                          'Controle remoto de luzes LED do dispositivo móvel.-',
-                          style: TextStyle(
-                              fontWeight: FontWeight.w900, fontSize: 18),
-                        ),
-                      ],
-                    ),
-                  ),
-                  Padding(
-                    padding: EdgeInsets.all(8.0),
-                    child: Row(
-                      children: [
-                        Icon(
-                          Icons.check_box,
-                          size: 36,
-                        ),
-                        SizedBox(
-                          width: 10,
-                        ),
-                        Text(
-                          'Proteção contra geada nas placas.-',
+                          'Proteção contra contra congelamento das placas durante\no inverno.-',
                           style: TextStyle(
                               fontWeight: FontWeight.w900, fontSize: 18),
                         ),

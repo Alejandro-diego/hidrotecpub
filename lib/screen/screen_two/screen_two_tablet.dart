@@ -76,84 +76,26 @@ class ScreenTwoTablet extends StatelessWidget {
               color: Colors.black.withOpacity(.7),
               border: Border.all(color: Colors.black),
             ),
-            child: const Column(
+            child:  Column(
               children: [
-                Padding(
-                  padding: EdgeInsets.all(8.0),
-                  child: Row(
-                    children: [
-                      Icon(
-                        Icons.check_box,
-                        size: 36,
-                      ),
-                      SizedBox(
-                        width: 10,
-                      ),
-                      Text(
-                        'Possível fazer automação com a bomba de agua.-',
-                        style: TextStyle(
-                            fontWeight: FontWeight.w900, fontSize: 15),
-                      ),
-                    ],
+
+ Padding(
+                    padding: const EdgeInsets.only(top: 8.0, bottom: 10),
+                    child: Text(
+                      'Aqui você adiciona eventos:',
+                      style: TextStyle(
+                          color: Colors.blue, fontSize: size.height * 0.025),
+                    ),
                   ),
-                ),
-                Padding(
-                  padding: EdgeInsets.all(8.0),
-                  child: Row(
-                    children: [
-                      Icon(
-                        Icons.check_box,
-                        size: 36,
-                      ),
-                      SizedBox(
-                        width: 10,
-                      ),
-                      Text(
-                        'Programe timer para ligar e desligar automaticamente.-',
-                        style: TextStyle(
-                            fontWeight: FontWeight.w900, fontSize: 15),
-                      ),
-                    ],
+
+                     Text(
+                    'Seleciona em quais dias da semana\n e a hora que você gostaria que\n a bomba e as luzes leds de sua\n piscina liguem e desliguem \nautomaticamente.-',
+                    style: TextStyle(
+                        fontWeight: FontWeight.w900,
+                        fontSize: size.height * 0.025),
                   ),
-                ),
-                Padding(
-                  padding: EdgeInsets.all(8.0),
-                  child: Row(
-                    children: [
-                      Icon(
-                        Icons.check_box,
-                        size: 36,
-                      ),
-                      SizedBox(
-                        width: 10,
-                      ),
-                      Text(
-                        'Possível fazer automação com as luces Leds.-',
-                        style: TextStyle(
-                            fontWeight: FontWeight.w900, fontSize: 15),
-                      ),
-                    ],
-                  ),
-                ),
-                Padding(
-                  padding: EdgeInsets.all(8.0),
-                  child: Row(
-                    children: [
-                      Icon(
-                        Icons.check_box,
-                        size: 36,
-                      ),
-                      SizedBox(
-                        width: 10,
-                      ),
-                      Text(
-                        'Programe por hora, dia, e semana.-',
-                        style: TextStyle(
-                            fontWeight: FontWeight.w900, fontSize: 15),
-                      ),
-                    ],
-                  ),
-                ),
+
+            
               ],
             ),
           ),

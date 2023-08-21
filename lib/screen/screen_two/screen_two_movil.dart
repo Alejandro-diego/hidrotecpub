@@ -91,7 +91,7 @@ class ScreenTwoMovil extends StatelessWidget {
                     width: 10,
                   ),
                   Text(
-                    'Seleciona em quais dias da semana\n e a hora que você gostaria que\n a bomba e as luzes leds de sua\n piscina liguem e desliguem automaticamente.-',
+                    'Seleciona em quais dias da semana\n e a hora que você gostaria que\n a bomba e as luzes leds de sua\n piscina liguem e desliguem \nautomaticamente.-',
                     style: TextStyle(
                         fontWeight: FontWeight.w900,
                         fontSize: size.height * 0.025),

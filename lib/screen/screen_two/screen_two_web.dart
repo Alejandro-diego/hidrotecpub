@@ -76,85 +76,27 @@ class ScreeTwoWeb extends StatelessWidget {
               color: Colors.black.withOpacity(.7),
               border: Border.all(color: Colors.black),
             ),
-            child: const SingleChildScrollView(
+            child:  SingleChildScrollView(
               child: Column(
                 children: [
-                  Padding(
-                    padding: EdgeInsets.all(8.0),
-                    child: Row(
-                      children: [
-                        Icon(
-                          Icons.check_box,
-                          size: 36,
-                        ),
-                        SizedBox(
-                          width: 10,
-                        ),
-                        Text(
-                          'Possível fazer automação com a bomba de agua.-',
-                          style: TextStyle(
-                              fontWeight: FontWeight.w900, fontSize: 18),
-                        ),
-                      ],
+                   Padding(
+                    padding: const EdgeInsets.only(top: 8.0, bottom: 10),
+                    child: Text(
+                      'Aqui você adiciona eventos:',
+                      style: TextStyle(
+                        fontWeight: FontWeight.w900,
+                          color: Colors.blue, fontSize: size.height * 0.035),
                     ),
                   ),
-                  Padding(
-                    padding: EdgeInsets.all(8.0),
-                    child: Row(
-                      children: [
-                        Icon(
-                          Icons.check_box,
-                          size: 36,
-                        ),
-                        SizedBox(
-                          width: 10,
-                        ),
-                        Text(
-                          'Programe timer para ligar e desligar automaticamente.-',
-                          style: TextStyle(
-                              fontWeight: FontWeight.w900, fontSize: 18),
-                        ),
-                      ],
-                    ),
+
+  Text(
+                    'Seleciona em quais dias da semana e a hora que você\ngostaria que a bomba e as luzes leds de sua piscina\nliguem e desliguem automaticamente.-',
+                    style: TextStyle(
+                        fontWeight: FontWeight.w900,
+                        fontSize: size.height * 0.025),
                   ),
-                  Padding(
-                    padding: EdgeInsets.all(8.0),
-                    child: Row(
-                      children: [
-                        Icon(
-                          Icons.check_box,
-                          size: 36,
-                        ),
-                        SizedBox(
-                          width: 10,
-                        ),
-                        Text(
-                          'Possível fazer automação com as luces Leds.-',
-                          style: TextStyle(
-                              fontWeight: FontWeight.w900, fontSize: 18),
-                        ),
-                      ],
-                    ),
-                  ),
-                  Padding(
-                    padding: EdgeInsets.all(8.0),
-                    child: Row(
-                      children: [
-                        Icon(
-                          Icons.check_box,
-                          size: 36,
-                        ),
-                        SizedBox(
-                          width: 10,
-                        ),
-                        Text(
-                          'Programe por hora, dia, e semana.-',
-                          style: TextStyle(
-                              fontWeight: FontWeight.w900, fontSize: 18),
-                        ),
-                      ],
-                    ),
-                  ),
+
+               
                 ],
               ),
             ),

@@ -100,7 +100,7 @@ class HomeWebPage extends StatelessWidget {
               pause: const Duration(milliseconds: 200),
               totalRepeatCount: 1,
               animatedTexts: [
-             ColorizeAnimatedText('Tenha o controle da sua piscina na sua mão',
+             ColorizeAnimatedText('Para uma maior comodidade e economia de energia elétrica \n Tenha o controle de sua piscina',
                     textStyle: const TextStyle(
                       fontSize: 35,
                       fontWeight: FontWeight.w900),
